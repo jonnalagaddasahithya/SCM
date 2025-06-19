@@ -1,0 +1,1139 @@
+2025-06-06 16:16:25,286 - app - INFO - Logger initialized.
+2025-06-06 16:16:25,293 - app - INFO - .env file loaded: True
+2025-06-06 16:16:25,294 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:16:25,295 - app - INFO - Creating FastAPI app
+2025-06-06 16:16:25,299 - app - INFO - SessionMiddleware added.
+2025-06-06 16:16:25,584 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:17:34,521 - app - INFO - Logger initialized.
+2025-06-06 16:17:34,525 - app - INFO - .env file loaded: True
+2025-06-06 16:17:34,525 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:17:34,527 - app - INFO - Creating FastAPI app
+2025-06-06 16:17:34,528 - app - INFO - SessionMiddleware added.
+2025-06-06 16:17:34,727 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:18:27,089 - app - INFO - Logger initialized.
+2025-06-06 16:18:27,091 - app - INFO - .env file loaded: True
+2025-06-06 16:18:27,092 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:18:27,092 - app - INFO - Creating FastAPI app
+2025-06-06 16:18:27,093 - app - INFO - SessionMiddleware added.
+2025-06-06 16:18:27,208 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:22:38,884 - app - INFO - Logger initialized.
+2025-06-06 16:22:38,885 - app - INFO - .env file loaded: True
+2025-06-06 16:22:38,886 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:22:38,886 - app - INFO - Creating FastAPI app
+2025-06-06 16:22:38,887 - app - INFO - SessionMiddleware added.
+2025-06-06 16:22:39,281 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:22:42,032 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 16:22:42,054 - app - INFO - Login page requested.
+2025-06-06 16:22:43,016 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 16:22:58,640 - app - INFO - Logger initialized.
+2025-06-06 16:22:58,642 - app - INFO - .env file loaded: True
+2025-06-06 16:22:58,642 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:22:58,643 - app - INFO - Creating FastAPI app
+2025-06-06 16:22:58,644 - app - INFO - SessionMiddleware added.
+2025-06-06 16:22:58,702 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:23:01,129 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 16:23:01,200 - app - INFO - Login page requested.
+2025-06-06 16:23:02,043 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 16:23:19,384 - app - INFO - Signup page requested.
+2025-06-06 16:23:19,440 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 16:23:57,886 - app - INFO - Signup form submitted for email: sanu@gmail.com
+2025-06-06 16:23:58,990 - app - INFO - Account created successfully for sanu@gmail.com with role user.
+2025-06-06 16:23:59,003 - app - INFO - Login page requested.
+2025-06-06 16:24:11,540 - app - INFO - Login attempt for username: sanu@gmail.com
+2025-06-06 16:24:13,404 - app - INFO - Login successful for sanu@gmail.com with role user.
+2025-06-06 16:24:13,471 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5MjA3ODUzfQ.eyDZqvdrj6o6waD9GO4cR-NcjUkObXpv93ssPtQBcsg
+2025-06-06 16:24:13,501 - app - INFO - Dashboard requested by sanu@gmail.com (Role: user).
+2025-06-06 16:24:33,210 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5MjA3ODUzfQ.eyDZqvdrj6o6waD9GO4cR-NcjUkObXpv93ssPtQBcsg
+2025-06-06 16:24:33,239 - app - INFO - Create shipment page requested by sanu@gmail.com.
+2025-06-06 16:26:28,785 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5MjA3ODUzfQ.eyDZqvdrj6o6waD9GO4cR-NcjUkObXpv93ssPtQBcsg
+2025-06-06 16:26:28,818 - app - INFO - Shipment creation submitted by sanu@gmail.com for shipment ID: SH12345.
+2025-06-06 16:26:28,884 - app - INFO - Shipment SH12345 created successfully.
+2025-06-06 16:26:28,894 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5MjA3ODUzfQ.eyDZqvdrj6o6waD9GO4cR-NcjUkObXpv93ssPtQBcsg
+2025-06-06 16:26:28,923 - app - INFO - Create shipment page requested by sanu@gmail.com.
+2025-06-06 16:35:04,819 - app - INFO - Logger initialized.
+2025-06-06 16:35:04,821 - app - INFO - .env file loaded: True
+2025-06-06 16:35:04,821 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:35:04,822 - app - INFO - Creating FastAPI app
+2025-06-06 16:35:04,823 - app - INFO - SessionMiddleware added.
+2025-06-06 16:35:05,673 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:35:08,285 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 16:35:08,300 - app - INFO - Login page requested.
+2025-06-06 16:35:12,097 - app - INFO - Signup page requested.
+2025-06-06 16:35:12,144 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 16:35:33,880 - app - INFO - Signup form submitted for email: divya@gmail.com
+2025-06-06 16:35:34,584 - app - INFO - Account created successfully for divya@gmail.com with role admin.
+2025-06-06 16:35:34,610 - app - INFO - Login page requested.
+2025-06-06 16:36:37,509 - app - INFO - Login attempt for username: divya@gmail.com
+2025-06-06 16:36:39,595 - app - INFO - Login successful for divya@gmail.com with role admin.
+2025-06-06 16:36:39,611 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaXZ5YUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDkyMDg1OTl9.hKvu_2qZysE3BvHqVRFbgw1MC-C6-8ncUYUHv9TbD3k
+2025-06-06 16:36:39,641 - app - INFO - Admin dashboard requested by divya@gmail.com.
+2025-06-06 16:36:52,976 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaXZ5YUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDkyMDg1OTl9.hKvu_2qZysE3BvHqVRFbgw1MC-C6-8ncUYUHv9TbD3k
+2025-06-06 16:36:53,007 - app - INFO - Edit shipment page requested by divya@gmail.com.
+2025-06-06 16:37:04,867 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaXZ5YUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NDkyMDg1OTl9.hKvu_2qZysE3BvHqVRFbgw1MC-C6-8ncUYUHv9TbD3k
+2025-06-06 16:37:04,894 - app - INFO - User management page requested by divya@gmail.com.
+2025-06-06 16:46:15,015 - app - INFO - Logger initialized.
+2025-06-06 16:46:15,017 - app - INFO - .env file loaded: True
+2025-06-06 16:46:15,018 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 16:46:15,019 - app - INFO - Creating FastAPI app
+2025-06-06 16:46:15,020 - app - INFO - SessionMiddleware added.
+2025-06-06 16:46:15,198 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 16:46:20,954 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 16:46:20,964 - app - INFO - Login page requested.
+2025-06-06 16:46:27,236 - app - INFO - Signup page requested.
+2025-06-06 16:46:27,268 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 16:46:52,947 - app - INFO - Signup form submitted for email: user1@exf.com
+2025-06-06 16:46:53,628 - app - INFO - Account created successfully for user1@exf.com with role user.
+2025-06-06 16:46:53,639 - app - INFO - Login page requested.
+2025-06-06 16:47:05,874 - app - INFO - Login attempt for username: user1@exf.com
+2025-06-06 16:47:08,018 - app - INFO - Login successful for user1@exf.com with role user.
+2025-06-06 16:47:08,032 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyMUBleGYuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyMDkyMjd9.y1zR8AszqDneM9loyrt-sDp7ZFYFRtJ9XO60eIUsSW4
+2025-06-06 16:47:08,061 - app - INFO - Dashboard requested by user1@exf.com (Role: user).
+2025-06-06 17:00:17,509 - app - INFO - Logger initialized.
+2025-06-06 17:00:17,511 - app - INFO - .env file loaded: True
+2025-06-06 17:00:17,512 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 17:00:17,513 - app - INFO - Creating FastAPI app
+2025-06-06 17:00:17,514 - app - INFO - SessionMiddleware added.
+2025-06-06 17:00:17,700 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 17:02:05,393 - app - INFO - Logger initialized.
+2025-06-06 17:02:05,395 - app - INFO - .env file loaded: True
+2025-06-06 17:02:05,396 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 17:02:05,397 - app - INFO - Creating FastAPI app
+2025-06-06 17:02:05,399 - app - INFO - SessionMiddleware added.
+2025-06-06 17:02:05,470 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 17:02:08,623 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 17:02:08,632 - app - INFO - Login page requested.
+2025-06-06 17:02:26,152 - app - INFO - Signup page requested.
+2025-06-06 17:02:26,201 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 17:06:39,314 - app - INFO - Login page requested.
+2025-06-06 17:54:40,237 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 17:54:40,249 - app - INFO - Login page requested.
+2025-06-06 17:54:55,916 - app - INFO - Signup page requested.
+2025-06-06 17:54:55,964 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 17:55:27,747 - app - INFO - Signup form submitted for email: varma@gmail.com
+2025-06-06 17:55:28,716 - app - INFO - Account created successfully for varma@gmail.com with role user.
+2025-06-06 17:55:28,727 - app - INFO - Login page requested.
+2025-06-06 17:55:42,890 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 17:55:44,801 - app - INFO - Login successful for varma@gmail.com with role user.
+2025-06-06 17:55:44,816 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXJtYUBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc0OTIxMzM0NH0.H86u-JjytON2aijcB-B8pqbBGox3E_q1h8s0wvW96mI
+2025-06-06 17:55:44,849 - app - INFO - Dashboard requested by varma@gmail.com (Role: user).
+2025-06-06 17:56:07,336 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXJtYUBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc0OTIxMzM0NH0.H86u-JjytON2aijcB-B8pqbBGox3E_q1h8s0wvW96mI
+2025-06-06 17:56:07,379 - app - INFO - Create shipment page requested by varma@gmail.com.
+2025-06-06 17:56:18,480 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ2YXJtYUBnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc0OTIxMzM0NH0.H86u-JjytON2aijcB-B8pqbBGox3E_q1h8s0wvW96mI
+2025-06-06 17:56:18,521 - app - INFO - Account page requested by varma@gmail.com.
+2025-06-06 20:29:25,464 - app - INFO - Logger initialized.
+2025-06-06 20:29:25,468 - app - INFO - .env file loaded: True
+2025-06-06 20:29:25,469 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:29:25,470 - app - INFO - Creating FastAPI app
+2025-06-06 20:29:25,472 - app - INFO - SessionMiddleware added.
+2025-06-06 20:29:25,506 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:29:27,004 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 20:29:27,113 - app - INFO - Login page requested.
+2025-06-06 20:37:49,553 - app - INFO - Logger initialized.
+2025-06-06 20:37:49,557 - app - INFO - .env file loaded: True
+2025-06-06 20:37:49,558 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:37:49,559 - app - INFO - Creating FastAPI app
+2025-06-06 20:37:49,561 - app - INFO - SessionMiddleware added.
+2025-06-06 20:37:49,591 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:37:54,481 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 20:37:54,628 - app - INFO - Login page requested.
+2025-06-06 20:39:10,814 - app - INFO - Logger initialized.
+2025-06-06 20:39:10,816 - app - INFO - .env file loaded: True
+2025-06-06 20:39:10,817 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:39:10,819 - app - INFO - Creating FastAPI app
+2025-06-06 20:39:10,821 - app - INFO - SessionMiddleware added.
+2025-06-06 20:39:10,838 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:39:14,169 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 20:39:14,275 - app - INFO - Login page requested.
+2025-06-06 20:45:24,759 - app - INFO - Logger initialized.
+2025-06-06 20:45:24,762 - app - INFO - .env file loaded: True
+2025-06-06 20:45:24,763 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:45:24,766 - app - INFO - Creating FastAPI app
+2025-06-06 20:45:24,768 - app - INFO - SessionMiddleware added.
+2025-06-06 20:45:24,792 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:45:29,384 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 20:45:29,490 - app - INFO - Login page requested.
+2025-06-06 20:58:46,965 - app - INFO - Logger initialized.
+2025-06-06 20:58:46,968 - app - INFO - .env file loaded: True
+2025-06-06 20:58:46,969 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:58:46,970 - app - INFO - Creating FastAPI app
+2025-06-06 20:58:46,972 - app - INFO - SessionMiddleware added.
+2025-06-06 20:58:46,990 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:58:54,204 - app - INFO - Logger initialized.
+2025-06-06 20:58:54,207 - app - INFO - .env file loaded: True
+2025-06-06 20:58:54,208 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 20:58:54,209 - app - INFO - Creating FastAPI app
+2025-06-06 20:58:54,211 - app - INFO - SessionMiddleware added.
+2025-06-06 20:58:54,228 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 20:58:59,567 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 20:58:59,575 - app - INFO - Login page requested.
+2025-06-06 21:00:46,369 - app - INFO - Logger initialized.
+2025-06-06 21:00:46,371 - app - INFO - .env file loaded: True
+2025-06-06 21:00:46,372 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:00:46,373 - app - INFO - Creating FastAPI app
+2025-06-06 21:00:46,374 - app - INFO - SessionMiddleware added.
+2025-06-06 21:00:46,387 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:00:51,079 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:00:51,240 - app - INFO - Login page requested.
+2025-06-06 21:05:39,206 - app - INFO - Logger initialized.
+2025-06-06 21:05:39,209 - app - INFO - .env file loaded: True
+2025-06-06 21:05:39,210 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:05:39,211 - app - INFO - Creating FastAPI app
+2025-06-06 21:05:39,213 - app - INFO - SessionMiddleware added.
+2025-06-06 21:05:39,241 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:05:44,109 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:05:44,126 - app - INFO - Login page requested.
+2025-06-06 21:08:44,639 - app - INFO - Logger initialized.
+2025-06-06 21:08:44,642 - app - INFO - .env file loaded: True
+2025-06-06 21:08:44,643 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:08:44,645 - app - INFO - Creating FastAPI app
+2025-06-06 21:08:44,646 - app - INFO - SessionMiddleware added.
+2025-06-06 21:08:44,663 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:08:53,773 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:08:53,781 - app - INFO - Login page requested.
+2025-06-06 21:09:21,497 - app - INFO - Signup page requested.
+2025-06-06 21:09:21,761 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:13:39,008 - app - INFO - Logger initialized.
+2025-06-06 21:13:39,011 - app - INFO - .env file loaded: True
+2025-06-06 21:13:39,012 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:13:39,012 - app - INFO - Creating FastAPI app
+2025-06-06 21:13:39,013 - app - INFO - SessionMiddleware added.
+2025-06-06 21:13:39,025 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:13:42,808 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:13:42,925 - app - INFO - Login page requested.
+2025-06-06 21:13:50,333 - app - INFO - Signup page requested.
+2025-06-06 21:13:50,390 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:14:27,245 - app - INFO - Signup form submitted for email: sanu@gmail.com
+2025-06-06 21:14:57,313 - app - INFO - Signup form submitted for email: sanu@gmail.com
+2025-06-06 21:15:27,355 - app - INFO - Login attempt for username: sanu@gmail.com
+2025-06-06 21:15:34,211 - app - ERROR - reCAPTCHA API call failed: ('Connection aborted.', ConnectionAbortedError(10053, 'An established connection was aborted by the software in your host machine', None, 10053, None))
+2025-06-06 21:15:36,936 - app - INFO - Login page requested.
+2025-06-06 21:15:44,443 - app - INFO - Signup form submitted for email: sanu@gmail.com
+2025-06-06 21:16:14,749 - app - INFO - Signup page requested.
+2025-06-06 21:16:14,750 - app - INFO - Signup page requested.
+2025-06-06 21:17:46,688 - app - INFO - Logger initialized.
+2025-06-06 21:17:46,692 - app - INFO - .env file loaded: True
+2025-06-06 21:17:46,693 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:17:46,694 - app - INFO - Creating FastAPI app
+2025-06-06 21:17:46,695 - app - INFO - SessionMiddleware added.
+2025-06-06 21:17:46,725 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:17:53,632 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:17:53,649 - app - INFO - Login page requested.
+2025-06-06 21:17:54,455 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:17:58,696 - app - INFO - Signup page requested.
+2025-06-06 21:17:58,767 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:18:20,094 - app - INFO - Login page requested.
+2025-06-06 21:18:32,704 - app - INFO - Login attempt for username: sanu@gmail.com
+2025-06-06 21:29:13,729 - app - INFO - Logger initialized.
+2025-06-06 21:29:13,732 - app - INFO - .env file loaded: True
+2025-06-06 21:29:13,734 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:29:13,735 - app - INFO - Creating FastAPI app
+2025-06-06 21:29:13,738 - app - INFO - SessionMiddleware added.
+2025-06-06 21:29:13,762 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:29:17,911 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:29:17,991 - app - INFO - Login page requested.
+2025-06-06 21:29:18,404 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:29:22,364 - app - INFO - Signup page requested.
+2025-06-06 21:29:22,440 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:29:40,242 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:30:27,996 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:30:29,545 - app - WARNING - reCAPTCHA verification failed.
+2025-06-06 21:30:29,557 - app - INFO - Login page requested.
+2025-06-06 21:30:45,766 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:30:45,781 - app - INFO - Login page requested.
+2025-06-06 21:35:01,499 - app - INFO - Logger initialized.
+2025-06-06 21:35:01,502 - app - INFO - .env file loaded: True
+2025-06-06 21:35:01,503 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:35:01,504 - app - INFO - Creating FastAPI app
+2025-06-06 21:35:01,506 - app - INFO - SessionMiddleware added.
+2025-06-06 21:35:01,591 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:35:08,586 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:35:08,603 - app - INFO - Login page requested.
+2025-06-06 21:35:20,838 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:37:54,712 - app - INFO - Logger initialized.
+2025-06-06 21:37:54,714 - app - INFO - .env file loaded: True
+2025-06-06 21:37:54,715 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:37:54,715 - app - INFO - Creating FastAPI app
+2025-06-06 21:37:54,717 - app - INFO - SessionMiddleware added.
+2025-06-06 21:37:54,728 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:37:59,162 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:37:59,257 - app - INFO - Login page requested.
+2025-06-06 21:38:14,529 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:39:20,883 - app - INFO - Logger initialized.
+2025-06-06 21:39:20,885 - app - INFO - .env file loaded: True
+2025-06-06 21:39:20,886 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:39:20,887 - app - INFO - Creating FastAPI app
+2025-06-06 21:39:20,888 - app - INFO - SessionMiddleware added.
+2025-06-06 21:39:20,902 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:39:54,769 - app - INFO - Logger initialized.
+2025-06-06 21:39:54,772 - app - INFO - .env file loaded: True
+2025-06-06 21:39:54,772 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:39:54,773 - app - INFO - Creating FastAPI app
+2025-06-06 21:39:54,775 - app - INFO - SessionMiddleware added.
+2025-06-06 21:39:54,793 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:39:58,564 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:39:58,741 - app - INFO - Login page requested.
+2025-06-06 21:49:57,829 - app - INFO - Logger initialized.
+2025-06-06 21:49:57,833 - app - INFO - .env file loaded: True
+2025-06-06 21:49:57,834 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:49:57,837 - app - INFO - Creating FastAPI app
+2025-06-06 21:49:57,840 - app - INFO - SessionMiddleware added.
+2025-06-06 21:49:57,882 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:50:03,213 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:50:03,340 - app - INFO - Login page requested.
+2025-06-06 21:50:18,414 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:50:50,812 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:50:53,154 - app - WARNING - reCAPTCHA verification failed.
+2025-06-06 21:50:53,166 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 21:50:55,618 - app - WARNING - reCAPTCHA verification failed.
+2025-06-06 21:50:55,649 - app - INFO - Login page requested.
+2025-06-06 21:52:24,056 - app - INFO - Logger initialized.
+2025-06-06 21:52:24,058 - app - INFO - .env file loaded: True
+2025-06-06 21:52:24,059 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 21:52:24,059 - app - INFO - Creating FastAPI app
+2025-06-06 21:52:24,061 - app - INFO - SessionMiddleware added.
+2025-06-06 21:52:24,077 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 21:52:29,703 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:52:29,723 - app - INFO - Login page requested.
+2025-06-06 21:52:30,731 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 21:54:03,968 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 21:54:03,978 - app - INFO - Login page requested.
+2025-06-06 21:54:42,827 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:00:52,637 - app - INFO - Logger initialized.
+2025-06-06 22:00:52,639 - app - INFO - .env file loaded: True
+2025-06-06 22:00:52,640 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:00:52,641 - app - INFO - Creating FastAPI app
+2025-06-06 22:00:52,642 - app - INFO - SessionMiddleware added.
+2025-06-06 22:00:52,660 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:00:57,264 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:00:57,415 - app - INFO - Login page requested.
+2025-06-06 22:00:58,698 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 22:01:08,821 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:01:41,982 - app - INFO - Signup page requested.
+2025-06-06 22:01:42,076 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 22:02:54,687 - app - INFO - Signup form submitted for email: sanu123@gmail.com
+2025-06-06 22:07:05,897 - app - INFO - Logger initialized.
+2025-06-06 22:07:05,899 - app - INFO - .env file loaded: True
+2025-06-06 22:07:05,900 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:07:05,901 - app - INFO - Creating FastAPI app
+2025-06-06 22:07:05,902 - app - INFO - SessionMiddleware added.
+2025-06-06 22:07:05,919 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:07:16,468 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:07:16,526 - app - INFO - Login page requested.
+2025-06-06 22:07:29,287 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:07:29,307 - app - INFO - Login page requested.
+2025-06-06 22:07:45,770 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:19:06,029 - app - INFO - Logger initialized.
+2025-06-06 22:19:06,035 - app - INFO - .env file loaded: True
+2025-06-06 22:19:06,036 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:19:06,037 - app - INFO - Creating FastAPI app
+2025-06-06 22:19:06,039 - app - INFO - SessionMiddleware added.
+2025-06-06 22:19:06,062 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:19:10,897 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:19:11,016 - app - INFO - Login page requested.
+2025-06-06 22:19:26,043 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:39:16,583 - app - INFO - Logger initialized.
+2025-06-06 22:39:16,586 - app - INFO - .env file loaded: True
+2025-06-06 22:39:16,587 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:39:16,587 - app - INFO - Creating FastAPI app
+2025-06-06 22:39:16,589 - app - INFO - SessionMiddleware added.
+2025-06-06 22:39:16,605 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:39:26,724 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:39:26,740 - app - INFO - Login page requested.
+2025-06-06 22:39:39,131 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:40:46,342 - app - INFO - Logger initialized.
+2025-06-06 22:40:46,346 - app - INFO - .env file loaded: True
+2025-06-06 22:40:46,347 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:40:46,347 - app - INFO - Creating FastAPI app
+2025-06-06 22:40:46,349 - app - INFO - SessionMiddleware added.
+2025-06-06 22:40:48,723 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:41:07,400 - app - INFO - Logger initialized.
+2025-06-06 22:41:07,401 - app - INFO - .env file loaded: True
+2025-06-06 22:41:07,402 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:41:07,403 - app - INFO - Creating FastAPI app
+2025-06-06 22:41:07,404 - app - INFO - SessionMiddleware added.
+2025-06-06 22:41:07,702 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:41:16,551 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:41:16,561 - app - INFO - Login page requested.
+2025-06-06 22:42:06,794 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 22:42:11,744 - app - WARNING - Invalid credentials provided.
+2025-06-06 22:42:19,175 - app - INFO - Signup page requested.
+2025-06-06 22:42:19,238 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 22:42:39,718 - app - INFO - Signup form submitted for email: varma123@gmail.com
+2025-06-06 22:42:40,492 - app - INFO - Account created successfully for varma123@gmail.com with role admin.
+2025-06-06 22:42:40,505 - app - INFO - Login page requested.
+2025-06-06 22:43:05,124 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 22:43:08,002 - app - WARNING - Invalid credentials provided.
+2025-06-06 22:43:57,415 - app - INFO - Login attempt for username: sanu123@gmail.com
+2025-06-06 22:43:59,249 - app - WARNING - Invalid credentials provided.
+2025-06-06 22:47:21,658 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:47:21,671 - app - INFO - Login page requested.
+2025-06-06 22:47:33,975 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:47:36,319 - app - WARNING - Invalid credentials provided.
+2025-06-06 22:49:48,858 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:49:48,876 - app - INFO - Login page requested.
+2025-06-06 22:50:11,601 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:50:13,353 - app - WARNING - Invalid credentials provided.
+2025-06-06 22:54:06,696 - app - INFO - Logger initialized.
+2025-06-06 22:54:06,698 - app - INFO - .env file loaded: True
+2025-06-06 22:54:06,699 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 22:54:06,699 - app - INFO - Creating FastAPI app
+2025-06-06 22:54:06,701 - app - INFO - SessionMiddleware added.
+2025-06-06 22:54:08,050 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 22:54:12,048 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 22:54:12,058 - app - INFO - Login page requested.
+2025-06-06 22:54:13,264 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 22:54:34,698 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 22:54:36,759 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:12:48,705 - app - INFO - Logger initialized.
+2025-06-06 23:12:48,709 - app - INFO - .env file loaded: True
+2025-06-06 23:12:48,710 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:12:48,712 - app - INFO - Creating FastAPI app
+2025-06-06 23:12:48,715 - app - INFO - SessionMiddleware added.
+2025-06-06 23:12:48,910 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:13:02,162 - app - INFO - Logger initialized.
+2025-06-06 23:13:02,165 - app - INFO - .env file loaded: True
+2025-06-06 23:13:02,165 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:13:02,166 - app - INFO - Creating FastAPI app
+2025-06-06 23:13:02,167 - app - INFO - SessionMiddleware added.
+2025-06-06 23:13:02,288 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:13:06,250 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 23:13:06,371 - app - INFO - Login page requested.
+2025-06-06 23:13:07,252 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:13:52,234 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:15:22,218 - app - INFO - Logger initialized.
+2025-06-06 23:15:22,220 - app - INFO - .env file loaded: True
+2025-06-06 23:15:22,220 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:15:22,220 - app - INFO - Creating FastAPI app
+2025-06-06 23:15:22,221 - app - INFO - SessionMiddleware added.
+2025-06-06 23:15:22,605 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:15:50,078 - app - INFO - Logger initialized.
+2025-06-06 23:15:50,080 - app - INFO - .env file loaded: True
+2025-06-06 23:15:50,080 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:15:50,080 - app - INFO - Creating FastAPI app
+2025-06-06 23:15:50,081 - app - INFO - SessionMiddleware added.
+2025-06-06 23:15:50,356 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:15:55,583 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 23:15:55,721 - app - INFO - Login page requested.
+2025-06-06 23:16:09,194 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:29:53,562 - app - INFO - Logger initialized.
+2025-06-06 23:29:53,565 - app - INFO - .env file loaded: True
+2025-06-06 23:29:53,566 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:29:53,567 - app - INFO - Creating FastAPI app
+2025-06-06 23:29:53,568 - app - INFO - SessionMiddleware added.
+2025-06-06 23:29:53,725 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:29:59,164 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 23:29:59,174 - app - INFO - Login page requested.
+2025-06-06 23:29:59,708 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:30:14,231 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:30:15,532 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:31:20,273 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:31:21,792 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:31:54,278 - app - WARNING - Invalid or expired token used for password reset: 
+2025-06-06 23:32:36,562 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:32:37,945 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:35:00,605 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:35:01,796 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:35:07,121 - app - INFO - Signup page requested.
+2025-06-06 23:35:07,413 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:36:21,919 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 23:36:23,882 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:36:23,895 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 23:36:25,327 - app - WARNING - reCAPTCHA verification failed.
+2025-06-06 23:36:25,344 - app - INFO - Login page requested.
+2025-06-06 23:36:51,024 - app - INFO - Login attempt for username: varma@gmail.com
+2025-06-06 23:36:53,030 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:37:18,402 - app - INFO - Login attempt for username: jonnalagaddasahithya@gmail.com
+2025-06-06 23:37:19,781 - app - WARNING - Invalid credentials provided.
+2025-06-06 23:37:22,558 - app - INFO - Signup page requested.
+2025-06-06 23:37:22,615 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:38:02,625 - app - INFO - Signup form submitted for email: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-06 23:38:02,627 - app - WARNING - Signup failed: Passwords do not match.
+2025-06-06 23:38:02,645 - app - INFO - Signup page requested.
+2025-06-06 23:38:02,691 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:38:40,812 - app - INFO - Signup form submitted for email: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-06 23:38:41,446 - app - INFO - Account created successfully for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-06 23:38:41,459 - app - INFO - Login page requested.
+2025-06-06 23:39:11,860 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-06 23:39:13,868 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-06 23:39:13,883 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyMzM5NTN9.anfgQ1amQ1Jinm1UBTPYaL8aXIxMH0z-lXSBpLBPTLk
+2025-06-06 23:39:13,916 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-06 23:39:52,601 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyMzM5NTN9.anfgQ1amQ1Jinm1UBTPYaL8aXIxMH0z-lXSBpLBPTLk
+2025-06-06 23:39:52,647 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-06 23:42:13,066 - app - INFO - Signup page requested.
+2025-06-06 23:42:13,113 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-06 23:42:58,829 - app - INFO - Signup form submitted for email: sanusahithya23@gmail.com
+2025-06-06 23:42:59,464 - app - INFO - Account created successfully for sanusahithya23@gmail.com with role user.
+2025-06-06 23:42:59,476 - app - INFO - Login page requested.
+2025-06-06 23:43:30,502 - app - INFO - Login attempt for username: sanusahithya23@gmail.com
+2025-06-06 23:43:32,303 - app - INFO - Login successful for sanusahithya23@gmail.com with role user.
+2025-06-06 23:43:32,321 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51c2FoaXRoeWEyM0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc0OTIzNDIxMn0.xdylgspc_JOBeFdv3RNOZV6VDosjDNjQzoJqD2MEU_U
+2025-06-06 23:43:32,355 - app - INFO - Dashboard requested by sanusahithya23@gmail.com (Role: user).
+2025-06-06 23:44:19,195 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYW51c2FoaXRoeWEyM0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc0OTIzNDIxMn0.xdylgspc_JOBeFdv3RNOZV6VDosjDNjQzoJqD2MEU_U
+2025-06-06 23:44:19,230 - app - INFO - Create shipment page requested by sanusahithya23@gmail.com.
+2025-06-06 23:45:54,448 - app - INFO - Logger initialized.
+2025-06-06 23:45:54,450 - app - INFO - .env file loaded: True
+2025-06-06 23:45:54,451 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:45:54,452 - app - INFO - Creating FastAPI app
+2025-06-06 23:45:54,453 - app - INFO - SessionMiddleware added.
+2025-06-06 23:45:54,582 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:47:43,003 - app - INFO - Logger initialized.
+2025-06-06 23:47:43,009 - app - INFO - .env file loaded: True
+2025-06-06 23:47:43,010 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-06 23:47:43,011 - app - INFO - Creating FastAPI app
+2025-06-06 23:47:43,013 - app - INFO - SessionMiddleware added.
+2025-06-06 23:47:43,095 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-06 23:47:47,902 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-06 23:47:47,915 - app - INFO - Login page requested.
+2025-06-06 23:47:56,821 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-06 23:47:59,210 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-06 23:47:59,227 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyMzQ0Nzl9.zhCMQG6_QF0r8EqwW3JJJeA2eliZW1sfp2KH--m3eQU
+2025-06-06 23:47:59,263 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-06 23:48:08,817 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyMzQ0Nzl9.zhCMQG6_QF0r8EqwW3JJJeA2eliZW1sfp2KH--m3eQU
+2025-06-06 23:48:08,862 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-07 10:35:49,719 - app - INFO - Logger initialized.
+2025-06-07 10:35:49,720 - app - INFO - .env file loaded: True
+2025-06-07 10:35:49,721 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-07 10:35:49,721 - app - INFO - Creating FastAPI app
+2025-06-07 10:35:49,722 - app - INFO - SessionMiddleware added.
+2025-06-07 10:35:51,403 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-07 10:35:59,830 - app - INFO - Logger initialized.
+2025-06-07 10:35:59,832 - app - INFO - .env file loaded: True
+2025-06-07 10:35:59,832 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-07 10:35:59,833 - app - INFO - Creating FastAPI app
+2025-06-07 10:35:59,833 - app - INFO - SessionMiddleware added.
+2025-06-07 10:36:01,644 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-07 10:36:05,256 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 10:36:05,264 - app - INFO - Login page requested.
+2025-06-07 10:36:09,721 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 10:36:11,310 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 10:36:11,325 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzMzNzF9.PszNBX7OMAGV0Rusef4pdm7OvH25bMDlwFVyufU28YU
+2025-06-07 10:36:11,384 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:05:11,380 - app - INFO - Logger initialized.
+2025-06-07 11:05:11,382 - app - INFO - .env file loaded: True
+2025-06-07 11:05:11,383 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-07 11:05:11,383 - app - INFO - Creating FastAPI app
+2025-06-07 11:05:11,384 - app - INFO - SessionMiddleware added.
+2025-06-07 11:05:13,147 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-07 11:05:16,198 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 11:05:16,341 - app - INFO - Login page requested.
+2025-06-07 11:05:17,335 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:05:37,698 - app - INFO - Login attempt for username: sanusahithya23@gmail.com
+2025-06-07 11:05:40,632 - app - WARNING - Invalid credentials provided.
+2025-06-07 11:05:43,729 - app - INFO - Signup page requested.
+2025-06-07 11:05:44,097 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:07:31,669 - app - INFO - Signup form submitted for email: sahi123@gmail.com
+2025-06-07 11:07:32,440 - app - INFO - Account created successfully for sahi123@gmail.com with role user.
+2025-06-07 11:07:32,453 - app - INFO - Login page requested.
+2025-06-07 11:07:59,052 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-07 11:08:01,457 - app - INFO - Login successful for sahi123@gmail.com with role user.
+2025-06-07 11:08:01,481 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5Mjc1MjgxfQ.bB6cFC7s7Hy-hNxGHrjkZRBeIRP-2uHPeN2Y8cR2jns
+2025-06-07 11:08:01,551 - app - INFO - Dashboard requested by sahi123@gmail.com (Role: user).
+2025-06-07 11:22:05,418 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 11:22:05,428 - app - INFO - Login page requested.
+2025-06-07 11:22:10,070 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 11:22:12,208 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 11:22:12,229 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzYxMzJ9.K1vR0swCesNmDi1JCRYvtACf2vABRjPML4OvYVzToCM
+2025-06-07 11:22:12,291 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:22:22,627 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:22:42,804 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:25:12,708 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzYxMzJ9.K1vR0swCesNmDi1JCRYvtACf2vABRjPML4OvYVzToCM
+2025-06-07 11:25:12,776 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:25:18,338 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:25:20,638 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:25:21,334 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:25:21,551 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:38:36,202 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:38:37,726 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:38:41,153 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:38:54,258 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:38:58,307 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:39:01,592 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:40:18,576 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:40:21,423 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:50:50,059 - app - DEBUG - JWT token from cookie: None
+2025-06-07 11:50:50,060 - app - ERROR - JWT token not found in cookie or header.
+2025-06-07 11:50:50,062 - app - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-06-07 11:50:51,456 - app - DEBUG - JWT token from cookie: None
+2025-06-07 11:50:51,457 - app - ERROR - JWT token not found in cookie or header.
+2025-06-07 11:50:51,458 - app - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-06-07 11:50:54,241 - app - INFO - Login page requested.
+2025-06-07 11:50:59,559 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 11:51:03,845 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 11:51:03,860 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzc4NjN9.C_rtULlpNIVO4-tH5lsYU5rR5s68kCYAAT2EZjtD980
+2025-06-07 11:51:03,926 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:51:05,806 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:51:07,768 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:51:11,239 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:51:16,518 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:12,593 - app - INFO - Logger initialized.
+2025-06-07 11:54:12,595 - app - INFO - .env file loaded: True
+2025-06-07 11:54:12,596 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-07 11:54:12,597 - app - INFO - Creating FastAPI app
+2025-06-07 11:54:12,598 - app - INFO - SessionMiddleware added.
+2025-06-07 11:54:14,728 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-07 11:54:17,019 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 11:54:17,030 - app - INFO - Login page requested.
+2025-06-07 11:54:21,164 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 11:54:24,019 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 11:54:24,038 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzgwNjN9.vZxcEBBoUXmBAwSwEaQU2Xcp93PeGE37eiN6gdwaKMg
+2025-06-07 11:54:24,095 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:54:25,983 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:28,248 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:29,165 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:29,330 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:29,506 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:29,695 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:29,864 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:54:30,074 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:57:26,074 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 11:57:26,088 - app - INFO - Login page requested.
+2025-06-07 11:57:43,702 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 11:57:46,103 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 11:57:46,117 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzgyNjZ9.LlemGF-l4dgA3_tH6MDk3FJicx0gQGultTwEtvDpmM0
+2025-06-07 11:57:46,181 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:57:48,477 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:59:04,663 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-07 11:59:04,677 - app - INFO - Login page requested.
+2025-06-07 11:59:12,402 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-07 11:59:14,577 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-07 11:59:14,600 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NDkyNzgzNTR9.RnqD3uycesl5LSXwmV30bEkE3ZcsyJ-4LFZJ2uQZz6A
+2025-06-07 11:59:14,660 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-07 11:59:16,576 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-07 11:59:47,240 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-08 14:28:17,130 - app - INFO - Logger initialized.
+2025-06-08 14:28:17,134 - app - INFO - .env file loaded: True
+2025-06-08 14:28:17,134 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-08 14:28:17,135 - app - INFO - Creating FastAPI app
+2025-06-08 14:28:17,137 - app - INFO - SessionMiddleware added.
+2025-06-08 14:28:17,417 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-08 14:32:38,953 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-08 14:32:39,055 - app - INFO - Login page requested.
+2025-06-08 14:32:40,559 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-08 14:34:28,907 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-08 14:34:29,015 - app - INFO - Login page requested.
+2025-06-08 14:52:09,042 - app - INFO - Logger initialized.
+2025-06-08 14:52:09,046 - app - INFO - .env file loaded: True
+2025-06-08 14:52:09,046 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-08 14:52:09,047 - app - INFO - Creating FastAPI app
+2025-06-08 14:52:09,048 - app - INFO - SessionMiddleware added.
+2025-06-08 14:52:09,255 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-10 18:36:26,029 - app - INFO - Logger initialized.
+2025-06-10 18:36:26,033 - app - INFO - .env file loaded: True
+2025-06-10 18:36:26,033 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-10 18:36:26,034 - app - INFO - Creating FastAPI app
+2025-06-10 18:36:26,037 - app - INFO - SessionMiddleware added.
+2025-06-10 18:36:26,318 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-10 18:36:30,615 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-10 18:36:30,704 - app - INFO - Login page requested.
+2025-06-10 18:36:32,099 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-10 18:36:35,227 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-10 18:36:37,794 - app - INFO - Login successful for sahi123@gmail.com with role user.
+2025-06-10 18:36:37,814 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5NTYxMzk3fQ.EtzTlO8Iu7wWBnwpyeVMI0sViMt3O8oLLnbJktEotuA
+2025-06-10 18:36:37,857 - app - INFO - Dashboard requested by sahi123@gmail.com (Role: user).
+2025-06-11 22:15:29,247 - app - INFO - Logger initialized.
+2025-06-11 22:15:29,259 - app - INFO - .env file loaded: True
+2025-06-11 22:15:29,265 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-11 22:15:29,266 - app - INFO - Creating FastAPI app
+2025-06-11 22:15:29,269 - app - INFO - SessionMiddleware added.
+2025-06-11 22:15:29,500 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-11 22:15:34,642 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-11 22:15:34,711 - app - INFO - Login page requested.
+2025-06-11 22:15:35,321 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-11 22:15:39,478 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-11 22:15:42,663 - app - INFO - Login successful for sahi123@gmail.com with role user.
+2025-06-11 22:15:42,695 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzQ5NjYwOTQyfQ.uJIuXZqk4fPyMq5t8iOEnbx8v1MOQojZIsY-01moXOw
+2025-06-11 22:15:42,769 - app - INFO - Dashboard requested by sahi123@gmail.com (Role: user).
+2025-06-16 11:19:01,406 - app - INFO - Logger initialized.
+2025-06-16 11:19:01,411 - app - INFO - .env file loaded: True
+2025-06-16 11:19:01,412 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-16 11:19:01,413 - app - INFO - Creating FastAPI app
+2025-06-16 11:19:01,417 - app - INFO - SessionMiddleware added.
+2025-06-16 11:19:01,541 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-16 11:19:06,065 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-16 11:19:06,138 - app - INFO - Login page requested.
+2025-06-16 11:19:06,553 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 12:04:39,963 - app - INFO - Logger initialized.
+2025-06-17 12:04:39,965 - app - INFO - .env file loaded: True
+2025-06-17 12:04:39,966 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-17 12:04:39,967 - app - INFO - Creating FastAPI app
+2025-06-17 12:04:39,968 - app - INFO - SessionMiddleware added.
+2025-06-17 12:04:40,199 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-17 12:04:44,474 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 12:04:44,481 - app - INFO - Login page requested.
+2025-06-17 12:04:46,006 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 12:04:49,134 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-17 12:04:51,253 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-17 12:04:51,269 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAxNDI2OTF9.y4OcrL5LJzJvp9bSmjjAwP5UPBNXV_H-K6wm4z7Bapg
+2025-06-17 12:04:51,332 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-17 12:05:03,118 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-17 12:05:04,256 - app - WARNING - reCAPTCHA verification failed.
+2025-06-17 12:05:04,266 - app - INFO - Login page requested.
+2025-06-17 12:05:08,880 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-17 12:05:10,796 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-17 12:05:10,806 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAxNDI3MTB9.5Iwluu1YA-xIctlErjPum9airbgeNiZIQFIAU7JjgDo
+2025-06-17 12:05:10,871 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-17 12:07:00,255 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 12:07:00,314 - app - INFO - Login page requested.
+2025-06-17 12:07:01,017 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 12:07:04,674 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-17 12:07:05,916 - app - INFO - Login successful for sahi123@gmail.com with role user.
+2025-06-17 12:07:05,926 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMTIzQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMTQyODI1fQ.jyEoddVQ1grV8eK-ry1Jt1sXAT_joxaPY6ZTAmZ_YM8
+2025-06-17 12:07:06,001 - app - INFO - Dashboard requested by sahi123@gmail.com (Role: user).
+2025-06-17 12:26:04,036 - app - DEBUG - JWT token from cookie: None
+2025-06-17 12:26:04,038 - app - ERROR - JWT token not found in cookie or header.
+2025-06-17 12:26:04,039 - app - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-06-17 13:42:42,393 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 13:42:42,454 - app - INFO - Login page requested.
+2025-06-17 13:43:05,700 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 13:43:05,780 - app - INFO - Login page requested.
+2025-06-17 13:43:05,943 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 13:43:29,880 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 13:43:29,942 - app - INFO - Login page requested.
+2025-06-17 13:52:56,797 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 13:52:56,848 - app - INFO - Login page requested.
+2025-06-17 13:53:01,245 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-17 13:53:03,568 - app - INFO - Login successful for sahi123@gmail.com with role user.
+2025-06-17 13:53:03,577 - app - INFO - Login attempt for username: sahi123@gmail.com
+2025-06-17 13:53:04,997 - app - WARNING - reCAPTCHA verification failed.
+2025-06-17 13:53:05,011 - app - INFO - Login page requested.
+2025-06-17 13:53:11,287 - app - INFO - Signup page requested.
+2025-06-17 13:53:11,364 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 13:53:50,480 - app - INFO - Signup form submitted for email: sahi234@gmail.com
+2025-06-17 13:53:51,281 - app - INFO - Account created successfully for sahi234@gmail.com with role user.
+2025-06-17 13:53:51,294 - app - INFO - Login page requested.
+2025-06-17 13:54:10,870 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-17 13:54:13,175 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-17 13:54:13,186 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMTQ5MjUzfQ.u_OaVqYKCWFPLrPCQJNut4NUKWIU7nSckdHjdkz5lfU
+2025-06-17 13:54:13,259 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-17 20:13:28,577 - app - INFO - Logger initialized.
+2025-06-17 20:13:28,579 - app - INFO - .env file loaded: True
+2025-06-17 20:13:28,580 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-17 20:13:28,580 - app - INFO - Creating FastAPI app
+2025-06-17 20:13:28,581 - app - INFO - SessionMiddleware added.
+2025-06-17 20:13:28,704 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-17 20:13:31,653 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 20:13:31,691 - app - INFO - Login page requested.
+2025-06-17 20:13:32,115 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 20:13:35,766 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-17 20:13:37,362 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-17 20:13:37,370 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMTcyMDE3fQ.illuKaJgdfT4L8W9Sh7DZqX7gux2osneYeah7_Ev1-8
+2025-06-17 20:13:37,405 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-17 20:14:02,351 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 20:14:02,358 - app - INFO - Login page requested.
+2025-06-17 20:14:02,695 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-17 21:17:02,067 - app - INFO - Logger initialized.
+2025-06-17 21:17:02,072 - app - INFO - .env file loaded: True
+2025-06-17 21:17:02,073 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-17 21:17:02,074 - app - INFO - Creating FastAPI app
+2025-06-17 21:17:02,076 - app - INFO - SessionMiddleware added.
+2025-06-17 21:17:02,283 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-17 21:17:07,253 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 21:17:07,373 - app - INFO - Login page requested.
+2025-06-17 21:17:11,632 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-17 21:17:14,277 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-17 21:17:14,292 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMTc1ODM0fQ.tjI1at4jdD9usXaC37qZFdTTDuGdHebpP5tR9YqbDDI
+2025-06-17 21:17:14,328 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-17 21:32:02,619 - app - INFO - Logger initialized.
+2025-06-17 21:32:02,623 - app - INFO - .env file loaded: True
+2025-06-17 21:32:02,624 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-17 21:32:02,625 - app - INFO - Creating FastAPI app
+2025-06-17 21:32:02,627 - app - INFO - SessionMiddleware added.
+2025-06-17 21:32:02,751 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-17 21:32:15,188 - app - INFO - Logger initialized.
+2025-06-17 21:32:15,192 - app - INFO - .env file loaded: True
+2025-06-17 21:32:15,193 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-17 21:32:15,194 - app - INFO - Creating FastAPI app
+2025-06-17 21:32:15,199 - app - INFO - SessionMiddleware added.
+2025-06-17 21:32:15,400 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-17 21:32:19,763 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-17 21:32:19,857 - app - INFO - Login page requested.
+2025-06-17 21:32:23,864 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-17 21:32:26,111 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-17 21:32:26,132 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMTc2NzQ2fQ.bz_o-vGv3y6llRsEVhM4zSJjHdxo-hHtBD7YttoeTwA
+2025-06-17 21:32:26,175 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 09:44:59,211 - app - INFO - Logger initialized.
+2025-06-18 09:44:59,216 - app - INFO - .env file loaded: True
+2025-06-18 09:44:59,219 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 09:44:59,222 - app - INFO - Creating FastAPI app
+2025-06-18 09:44:59,227 - app - INFO - SessionMiddleware added.
+2025-06-18 09:44:59,502 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 09:53:33,730 - app - INFO - Logger initialized.
+2025-06-18 09:53:33,732 - app - INFO - .env file loaded: True
+2025-06-18 09:53:33,733 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 09:53:33,734 - app - INFO - Creating FastAPI app
+2025-06-18 09:53:33,735 - app - INFO - SessionMiddleware added.
+2025-06-18 09:53:33,878 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 09:53:37,934 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 09:53:38,053 - app - INFO - Login page requested.
+2025-06-18 09:53:42,330 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-18 09:53:44,756 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-18 09:53:44,769 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 09:53:44,820 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 09:53:48,229 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 09:53:48,268 - app - INFO - Account page requested by sahi234@gmail.com.
+2025-06-18 09:53:54,147 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 09:53:54,188 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 09:54:01,336 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 09:54:01,375 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 10:00:35,618 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-18 10:00:37,755 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-18 10:00:37,778 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjE2Mzd9.dK7R-8t8OooegqsYDcBHT7pEziYxRR8fO8xtP_L5Xzc
+2025-06-18 10:00:37,814 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 10:00:43,494 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjE2Mzd9.dK7R-8t8OooegqsYDcBHT7pEziYxRR8fO8xtP_L5Xzc
+2025-06-18 10:00:43,577 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 10:00:45,995 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 10:02:09,637 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 10:02:09,684 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 10:02:19,286 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 10:02:19,373 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 10:02:29,511 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjIxMjI0fQ.Ulpuk4xh9dgUTt_SipNsSW2SB0CtPmSU_gW6JbKyzgI
+2025-06-18 10:02:29,553 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 12:07:52,849 - app - INFO - Logger initialized.
+2025-06-18 12:07:52,853 - app - INFO - .env file loaded: True
+2025-06-18 12:07:52,854 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 12:07:52,854 - app - INFO - Creating FastAPI app
+2025-06-18 12:07:52,855 - app - INFO - SessionMiddleware added.
+2025-06-18 12:07:53,000 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 12:08:04,423 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:08:04,433 - app - INFO - Login page requested.
+2025-06-18 12:08:08,790 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-18 12:08:09,970 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-18 12:08:09,982 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjkyODl9.fzHsH_TBel-DyevJCN0ZYcM0OyI7CKTiLWTQklS_7dw
+2025-06-18 12:08:10,017 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 12:08:14,252 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjkyODl9.fzHsH_TBel-DyevJCN0ZYcM0OyI7CKTiLWTQklS_7dw
+2025-06-18 12:08:14,294 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 12:08:23,072 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjkyODl9.fzHsH_TBel-DyevJCN0ZYcM0OyI7CKTiLWTQklS_7dw
+2025-06-18 12:08:23,107 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 12:08:31,273 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjkyODl9.fzHsH_TBel-DyevJCN0ZYcM0OyI7CKTiLWTQklS_7dw
+2025-06-18 12:08:31,305 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 12:08:35,356 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMjkyODl9.fzHsH_TBel-DyevJCN0ZYcM0OyI7CKTiLWTQklS_7dw
+2025-06-18 12:08:35,388 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 12:08:43,424 - app - INFO - Signup page requested.
+2025-06-18 12:08:43,597 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 12:09:12,562 - app - INFO - Signup form submitted for email: sahithya000@gmail.com
+2025-06-18 12:09:13,133 - app - INFO - Account created successfully for sahithya000@gmail.com with role admin.
+2025-06-18 12:09:13,150 - app - INFO - Login page requested.
+2025-06-18 12:09:34,966 - app - INFO - Login attempt for username: sahithya000@gmail.com
+2025-06-18 12:09:36,332 - app - INFO - Login successful for sahithya000@gmail.com with role admin.
+2025-06-18 12:09:36,345 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpdGh5YTAwMEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyMjkzNzZ9.HkM1504Lt08rcnzVFODJP_bB8VRmHzce6sL2tBu-DK4
+2025-06-18 12:09:36,378 - app - INFO - Admin dashboard requested by sahithya000@gmail.com.
+2025-06-18 12:28:38,181 - app - INFO - Logger initialized.
+2025-06-18 12:28:38,182 - app - INFO - .env file loaded: True
+2025-06-18 12:28:38,183 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 12:28:38,183 - app - INFO - Creating FastAPI app
+2025-06-18 12:28:38,183 - app - INFO - SessionMiddleware added.
+2025-06-18 12:28:38,287 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 12:28:42,051 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:28:42,123 - app - INFO - Login page requested.
+2025-06-18 12:28:46,744 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-18 12:28:48,661 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-18 12:28:48,678 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjMwNTI4fQ.quo1iDMPsEavFHANgm9PJ0AYNlzXpt_0i1eI6T5Eyto
+2025-06-18 12:28:48,715 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 12:31:30,738 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:31:30,744 - app - INFO - Login page requested.
+2025-06-18 12:32:18,197 - app - INFO - Login page requested.
+2025-06-18 12:32:59,953 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:32:59,961 - app - INFO - Login page requested.
+2025-06-18 12:37:41,109 - app - INFO - Logger initialized.
+2025-06-18 12:37:41,112 - app - INFO - .env file loaded: True
+2025-06-18 12:37:41,112 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 12:37:41,113 - app - INFO - Creating FastAPI app
+2025-06-18 12:37:41,114 - app - INFO - SessionMiddleware added.
+2025-06-18 12:37:41,241 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 12:37:56,030 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:37:56,036 - app - INFO - Login page requested.
+2025-06-18 12:38:37,615 - app - INFO - Login attempt for username: sahithya000@gmail.com
+2025-06-18 12:38:39,314 - app - INFO - Login successful for sahithya000@gmail.com with role admin.
+2025-06-18 12:38:39,324 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpdGh5YTAwMEBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyMzExMTl9.M02-0XhR6CZEf4o0IgPrgZC8WLpyBO80aZt0Iekdims
+2025-06-18 12:38:39,356 - app - INFO - Admin dashboard requested by sahithya000@gmail.com.
+2025-06-18 12:39:01,977 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 12:39:01,984 - app - INFO - Login page requested.
+2025-06-18 12:39:06,004 - app - INFO - Signup page requested.
+2025-06-18 12:39:06,036 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 12:40:00,778 - app - INFO - Signup form submitted for email: abc@gmail.com
+2025-06-18 12:40:01,070 - app - INFO - Account created successfully for abc@gmail.com with role user.
+2025-06-18 12:40:01,075 - app - INFO - Login page requested.
+2025-06-18 12:40:23,850 - app - INFO - Login attempt for username: abc@gmail.com
+2025-06-18 12:40:24,563 - app - INFO - Login successful for abc@gmail.com with role user.
+2025-06-18 12:40:24,581 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMzEyMjR9.38HSjuIz2SXPu0wQ2kQ_KiMDuAS2VMwR-zuUSiIqIuQ
+2025-06-18 12:40:24,612 - app - INFO - Dashboard requested by abc@gmail.com (Role: user).
+2025-06-18 12:40:56,406 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMzEyMjR9.38HSjuIz2SXPu0wQ2kQ_KiMDuAS2VMwR-zuUSiIqIuQ
+2025-06-18 12:40:56,443 - app - INFO - Create shipment page requested by abc@gmail.com.
+2025-06-18 12:41:00,178 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMzEyMjR9.38HSjuIz2SXPu0wQ2kQ_KiMDuAS2VMwR-zuUSiIqIuQ
+2025-06-18 12:41:00,210 - app - INFO - Create shipment page requested by abc@gmail.com.
+2025-06-18 12:41:03,657 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMzEyMjR9.38HSjuIz2SXPu0wQ2kQ_KiMDuAS2VMwR-zuUSiIqIuQ
+2025-06-18 12:41:03,690 - app - INFO - Account page requested by abc@gmail.com.
+2025-06-18 12:41:13,590 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyMzEyMjR9.38HSjuIz2SXPu0wQ2kQ_KiMDuAS2VMwR-zuUSiIqIuQ
+2025-06-18 12:41:13,620 - app - INFO - Dashboard requested by abc@gmail.com (Role: user).
+2025-06-18 12:41:15,485 - app - INFO - User logged out.
+2025-06-18 12:41:15,492 - app - INFO - Login page requested.
+2025-06-18 16:56:56,659 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 16:56:56,840 - app - INFO - Login page requested.
+2025-06-18 16:57:16,035 - app - INFO - Login attempt for username: sahi000@gmail.com
+2025-06-18 16:57:17,423 - app - WARNING - Invalid credentials provided.
+2025-06-18 16:57:23,005 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-18 16:57:24,801 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-18 16:57:24,818 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjQ2NjQ0fQ.HHjstFQyWR0ooZbtyz5GdKcJD7xyf4p00rK0BBx0Qro
+2025-06-18 16:57:24,853 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 16:57:32,914 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjQ2NjQ0fQ.HHjstFQyWR0ooZbtyz5GdKcJD7xyf4p00rK0BBx0Qro
+2025-06-18 16:57:32,953 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 16:58:03,179 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjQ2NjQ0fQ.HHjstFQyWR0ooZbtyz5GdKcJD7xyf4p00rK0BBx0Qro
+2025-06-18 16:58:03,213 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 16:58:05,162 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 16:58:43,554 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 16:58:47,700 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 16:59:09,376 - app - INFO - Logger initialized.
+2025-06-18 16:59:09,379 - app - INFO - .env file loaded: True
+2025-06-18 16:59:09,380 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 16:59:09,381 - app - INFO - Creating FastAPI app
+2025-06-18 16:59:09,383 - app - INFO - SessionMiddleware added.
+2025-06-18 16:59:09,529 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 16:59:14,337 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 16:59:14,497 - app - INFO - Login page requested.
+2025-06-18 16:59:25,645 - app - INFO - Signup page requested.
+2025-06-18 16:59:25,948 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 17:00:25,506 - app - INFO - Signup form submitted for email: ammulu123@gmail.com
+2025-06-18 17:00:26,533 - app - INFO - Account created successfully for ammulu123@gmail.com with role user.
+2025-06-18 17:00:26,555 - app - INFO - Login page requested.
+2025-06-18 17:00:45,442 - app - INFO - Login attempt for username: ammulu123@gmail.com
+2025-06-18 17:00:47,390 - app - INFO - Login successful for ammulu123@gmail.com with role user.
+2025-06-18 17:00:47,409 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbW11bHUxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDY4NDd9.B7SsuoVnfjYK8kLgRLoAvRkXIUwCl9FCQxAQBgxuiwc
+2025-06-18 17:00:47,452 - app - INFO - Dashboard requested by ammulu123@gmail.com (Role: user).
+2025-06-18 17:00:51,191 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbW11bHUxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDY4NDd9.B7SsuoVnfjYK8kLgRLoAvRkXIUwCl9FCQxAQBgxuiwc
+2025-06-18 17:00:51,228 - app - INFO - Create shipment page requested by ammulu123@gmail.com.
+2025-06-18 17:01:03,827 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbW11bHUxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDY4NDd9.B7SsuoVnfjYK8kLgRLoAvRkXIUwCl9FCQxAQBgxuiwc
+2025-06-18 17:01:03,859 - app - INFO - Create shipment page requested by ammulu123@gmail.com.
+2025-06-18 17:01:13,747 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhbW11bHUxMjNAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDY4NDd9.B7SsuoVnfjYK8kLgRLoAvRkXIUwCl9FCQxAQBgxuiwc
+2025-06-18 17:01:13,807 - app - INFO - Create shipment page requested by ammulu123@gmail.com.
+2025-06-18 17:18:57,447 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 17:18:57,545 - app - INFO - Login page requested.
+2025-06-18 17:19:01,097 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-18 17:19:03,947 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-18 17:19:03,966 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjQ3OTQzfQ.R4t0ikUHLYulINaOG8xixFbnrDl0Ze0rBSZFroO5Fak
+2025-06-18 17:19:04,000 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 17:21:46,754 - app - INFO - Logger initialized.
+2025-06-18 17:21:46,756 - app - INFO - .env file loaded: True
+2025-06-18 17:21:46,757 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 17:21:46,758 - app - INFO - Creating FastAPI app
+2025-06-18 17:21:46,760 - app - INFO - SessionMiddleware added.
+2025-06-18 17:21:46,938 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 17:23:57,493 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 17:23:57,502 - app - INFO - Login page requested.
+2025-06-18 17:24:05,523 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-18 17:24:07,822 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-18 17:24:07,847 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDgyNDd9.HGtlDb7HzhrJcfcKwIIhnYt7siU83rsYzuRW9oG2m1o
+2025-06-18 17:24:07,893 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 17:24:13,129 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDgyNDd9.HGtlDb7HzhrJcfcKwIIhnYt7siU83rsYzuRW9oG2m1o
+2025-06-18 17:24:13,176 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:24:26,959 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDgyNDd9.HGtlDb7HzhrJcfcKwIIhnYt7siU83rsYzuRW9oG2m1o
+2025-06-18 17:24:27,002 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 17:24:28,899 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDgyNDd9.HGtlDb7HzhrJcfcKwIIhnYt7siU83rsYzuRW9oG2m1o
+2025-06-18 17:24:28,939 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:32:53,679 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNDgyNDd9.HGtlDb7HzhrJcfcKwIIhnYt7siU83rsYzuRW9oG2m1o
+2025-06-18 17:32:53,719 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:32:53,763 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 17:34:53,611 - app - DEBUG - JWT token from cookie: None
+2025-06-18 17:34:53,613 - app - ERROR - JWT token not found in cookie or header.
+2025-06-18 17:34:53,615 - app - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-06-18 17:54:19,517 - app - INFO - Logger initialized.
+2025-06-18 17:54:19,520 - app - INFO - .env file loaded: True
+2025-06-18 17:54:19,522 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 17:54:19,524 - app - INFO - Creating FastAPI app
+2025-06-18 17:54:19,527 - app - INFO - SessionMiddleware added.
+2025-06-18 17:54:19,815 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 17:54:25,189 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 17:54:25,254 - app - INFO - Login page requested.
+2025-06-18 17:54:29,597 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-18 17:54:31,816 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-18 17:54:31,830 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjUwMDcxfQ.6i86TFg0P5XrajDDm99vvD4BXBQy8R8OKsB4jd15GnQ
+2025-06-18 17:54:31,862 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-18 17:54:35,354 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjUwMDcxfQ.6i86TFg0P5XrajDDm99vvD4BXBQy8R8OKsB4jd15GnQ
+2025-06-18 17:54:35,390 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 17:54:35,643 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 17:54:42,711 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMjUwMDcxfQ.6i86TFg0P5XrajDDm99vvD4BXBQy8R8OKsB4jd15GnQ
+2025-06-18 17:54:42,742 - app - INFO - Create shipment page requested by sahi234@gmail.com.
+2025-06-18 17:54:42,768 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 17:59:27,705 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 17:59:27,727 - app - INFO - Login page requested.
+2025-06-18 17:59:31,710 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-18 17:59:33,143 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-18 17:59:33,160 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNTAzNzN9.o7SunJW6bqjGZaNCqaUwkz6gc3Lq-3Uj4_7evsaxh-M
+2025-06-18 17:59:33,193 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 17:59:35,601 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNTAzNzN9.o7SunJW6bqjGZaNCqaUwkz6gc3Lq-3Uj4_7evsaxh-M
+2025-06-18 17:59:35,635 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:59:35,689 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 17:59:46,368 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNTAzNzN9.o7SunJW6bqjGZaNCqaUwkz6gc3Lq-3Uj4_7evsaxh-M
+2025-06-18 17:59:46,411 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:59:49,322 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNTAzNzN9.o7SunJW6bqjGZaNCqaUwkz6gc3Lq-3Uj4_7evsaxh-M
+2025-06-18 17:59:49,358 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-18 17:59:51,614 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAyNTAzNzN9.o7SunJW6bqjGZaNCqaUwkz6gc3Lq-3Uj4_7evsaxh-M
+2025-06-18 17:59:51,650 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-18 17:59:57,817 - app - INFO - User logged out.
+2025-06-18 17:59:57,840 - app - INFO - Login page requested.
+2025-06-18 18:00:19,123 - app - INFO - Login attempt for username: sahi000@gmail.com
+2025-06-18 18:00:20,449 - app - WARNING - Invalid credentials provided.
+2025-06-18 18:00:23,243 - app - INFO - Signup page requested.
+2025-06-18 18:00:23,323 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 18:01:14,808 - app - INFO - Signup form submitted for email: bobby@gmail.com
+2025-06-18 18:01:15,583 - app - INFO - Account created successfully for bobby@gmail.com with role admin.
+2025-06-18 18:01:15,606 - app - INFO - Login page requested.
+2025-06-18 18:01:36,326 - app - INFO - Login attempt for username: bobby@gmail.com
+2025-06-18 18:01:38,375 - app - INFO - Login successful for bobby@gmail.com with role admin.
+2025-06-18 18:01:38,391 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:01:38,429 - app - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-06-18 18:01:48,486 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:01:48,522 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-18 18:01:48,634 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 18:01:54,806 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:01:54,840 - app - INFO - User management page requested by bobby@gmail.com.
+2025-06-18 18:02:16,685 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:02:16,717 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-18 18:02:16,787 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-18 18:02:28,535 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:02:28,570 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-18 18:02:28,632 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 18:02:32,947 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNTA0OTh9.NNB4ViEECd4VG009fmXOsggUaXmfOQKHHC_vWSXHw-0
+2025-06-18 18:02:32,984 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-18 18:02:33,048 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-18 20:28:51,553 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 20:28:51,561 - app - INFO - Login page requested.
+2025-06-18 20:30:38,469 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 20:30:38,482 - app - INFO - Login page requested.
+2025-06-18 21:03:41,617 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 21:03:41,632 - app - INFO - Login page requested.
+2025-06-18 21:03:42,458 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 21:04:00,758 - app - INFO - Login attempt for username: bobby@gmail.com
+2025-06-18 21:04:02,937 - app - INFO - Login successful for bobby@gmail.com with role admin.
+2025-06-18 21:04:02,952 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:04:02,993 - app - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-06-18 21:04:10,181 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:04:10,223 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-18 21:04:10,307 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 21:04:20,343 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:04:20,386 - app - INFO - Create shipment page requested by bobby@gmail.com.
+2025-06-18 21:04:20,429 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 21:05:34,988 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:05:35,022 - app - INFO - Shipment creation submitted by bobby@gmail.com for shipment ID: SH12346.
+2025-06-18 21:05:35,116 - app - INFO - Shipment SH12346 created successfully.
+2025-06-18 21:05:35,129 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:05:35,162 - app - INFO - Create shipment page requested by bobby@gmail.com.
+2025-06-18 21:05:35,193 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 21:05:46,874 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:05:46,909 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-18 21:05:46,984 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-18 21:05:52,888 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjE0NDJ9.Xjv4T27GID7VDf_Oq140lrHn5NMXpZqw9KY_ZRpahIY
+2025-06-18 21:05:52,926 - app - INFO - User management page requested by bobby@gmail.com.
+2025-06-18 21:54:07,634 - app - DEBUG - JWT token from cookie: None
+2025-06-18 21:54:07,638 - app - ERROR - JWT token not found in cookie or header.
+2025-06-18 21:54:07,641 - app - ERROR - HTTP Exception caught: 401 - Not authenticated
+2025-06-18 21:54:24,487 - app - INFO - Logger initialized.
+2025-06-18 21:54:24,489 - app - INFO - .env file loaded: True
+2025-06-18 21:54:24,490 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-18 21:54:24,491 - app - INFO - Creating FastAPI app
+2025-06-18 21:54:24,492 - app - INFO - SessionMiddleware added.
+2025-06-18 21:54:24,631 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-18 21:54:28,153 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-18 21:54:28,185 - app - INFO - Login page requested.
+2025-06-18 21:54:45,786 - app - INFO - Login attempt for username: bobby@gmail.com
+2025-06-18 21:54:47,765 - app - INFO - Login successful for bobby@gmail.com with role admin.
+2025-06-18 21:54:47,776 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjQ0ODd9.1ihI0b5w4AG2raCOQsVebUX6MuVz7BZfltHPveOunpU
+2025-06-18 21:54:47,823 - app - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-06-18 21:54:58,721 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjQ0ODd9.1ihI0b5w4AG2raCOQsVebUX6MuVz7BZfltHPveOunpU
+2025-06-18 21:54:58,771 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-18 21:54:58,877 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-18 21:55:04,632 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAyNjQ0ODd9.1ihI0b5w4AG2raCOQsVebUX6MuVz7BZfltHPveOunpU
+2025-06-18 21:55:04,681 - app - INFO - User management page requested by bobby@gmail.com.
+2025-06-19 10:33:34,030 - app - INFO - Logger initialized.
+2025-06-19 10:33:34,033 - app - INFO - .env file loaded: True
+2025-06-19 10:33:34,033 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-19 10:33:34,035 - app - INFO - Creating FastAPI app
+2025-06-19 10:33:34,037 - app - INFO - SessionMiddleware added.
+2025-06-19 10:33:34,291 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-19 10:33:38,930 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-19 10:33:38,954 - app - INFO - Login page requested.
+2025-06-19 10:33:39,558 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 11:16:51,558 - app - INFO - Logger initialized.
+2025-06-19 11:16:51,561 - app - INFO - .env file loaded: True
+2025-06-19 11:16:51,562 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-19 11:16:51,563 - app - INFO - Creating FastAPI app
+2025-06-19 11:16:51,564 - app - INFO - SessionMiddleware added.
+2025-06-19 11:16:51,798 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-19 11:16:55,769 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-19 11:16:55,829 - app - INFO - Login page requested.
+2025-06-19 11:16:56,678 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 11:19:33,696 - app - INFO - Login attempt for username: sahi234@gmail.com
+2025-06-19 11:19:36,217 - app - INFO - Login successful for sahi234@gmail.com with role user.
+2025-06-19 11:19:36,233 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMzEyNzc2fQ.Jb1HMxCGTYzcAiRBJDndM6lBIb__C7fAC5GW87GgbS8
+2025-06-19 11:19:36,294 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-19 11:19:39,095 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMzEyNzc2fQ.Jb1HMxCGTYzcAiRBJDndM6lBIb__C7fAC5GW87GgbS8
+2025-06-19 11:19:39,167 - app - INFO - Account page requested by sahi234@gmail.com.
+2025-06-19 11:22:49,366 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzYWhpMjM0QGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiZXhwIjoxNzUwMzEyNzc2fQ.Jb1HMxCGTYzcAiRBJDndM6lBIb__C7fAC5GW87GgbS8
+2025-06-19 11:22:49,447 - app - INFO - Dashboard requested by sahi234@gmail.com (Role: user).
+2025-06-19 12:38:17,942 - app - INFO - Logger initialized.
+2025-06-19 12:38:17,946 - app - INFO - .env file loaded: True
+2025-06-19 12:38:17,947 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-19 12:38:17,948 - app - INFO - Creating FastAPI app
+2025-06-19 12:38:17,951 - app - INFO - SessionMiddleware added.
+2025-06-19 12:38:18,166 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-19 12:38:23,019 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-19 12:38:23,110 - app - INFO - Login page requested.
+2025-06-19 12:38:23,611 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:42:51,696 - app - INFO - Logger initialized.
+2025-06-19 14:42:51,700 - app - INFO - .env file loaded: True
+2025-06-19 14:42:51,701 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-19 14:42:51,703 - app - INFO - Creating FastAPI app
+2025-06-19 14:42:51,705 - app - INFO - SessionMiddleware added.
+2025-06-19 14:42:51,914 - app - INFO - MongoDB connection established and collections initialized.
+2025-06-19 14:52:13,957 - app - INFO - Root endpoint accessed, redirecting to /login.
+2025-06-19 14:52:13,966 - app - INFO - Login page requested.
+2025-06-19 14:52:14,453 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:52:19,801 - app - INFO - Login attempt for username: MUNISHSIDDARTH7077@GMAIL.COM
+2025-06-19 14:52:21,807 - app - INFO - Login successful for MUNISHSIDDARTH7077@GMAIL.COM with role user.
+2025-06-19 14:52:21,819 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAzMjU1NDF9.eOqQ6ct7kaV_1CIYp_W1IaqYM_a2h2ScOQsWcVE_wNE
+2025-06-19 14:52:21,845 - app - INFO - Dashboard requested by MUNISHSIDDARTH7077@GMAIL.COM (Role: user).
+2025-06-19 14:52:23,904 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAzMjU1NDF9.eOqQ6ct7kaV_1CIYp_W1IaqYM_a2h2ScOQsWcVE_wNE
+2025-06-19 14:52:23,931 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-19 14:52:23,980 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:52:33,064 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAzMjU1NDF9.eOqQ6ct7kaV_1CIYp_W1IaqYM_a2h2ScOQsWcVE_wNE
+2025-06-19 14:52:33,090 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-19 14:52:39,873 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAzMjU1NDF9.eOqQ6ct7kaV_1CIYp_W1IaqYM_a2h2ScOQsWcVE_wNE
+2025-06-19 14:52:39,902 - app - INFO - Account page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-19 14:52:43,960 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNVU5JU0hTSUREQVJUSDcwNzdAR01BSUwuQ09NIiwicm9sZSI6InVzZXIiLCJleHAiOjE3NTAzMjU1NDF9.eOqQ6ct7kaV_1CIYp_W1IaqYM_a2h2ScOQsWcVE_wNE
+2025-06-19 14:52:43,985 - app - INFO - Create shipment page requested by MUNISHSIDDARTH7077@GMAIL.COM.
+2025-06-19 14:52:44,007 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:53:10,315 - app - INFO - Login attempt for username: bobby@gmail.com
+2025-06-19 14:53:11,453 - app - WARNING - reCAPTCHA verification failed.
+2025-06-19 14:53:11,464 - app - INFO - Login page requested.
+2025-06-19 14:53:33,856 - app - INFO - Login attempt for username: bobby@gmail.com
+2025-06-19 14:53:35,528 - app - INFO - Login successful for bobby@gmail.com with role admin.
+2025-06-19 14:53:35,545 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:53:35,587 - app - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-06-19 14:53:39,354 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:53:39,383 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-19 14:53:39,442 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:53:44,145 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:53:44,173 - app - INFO - User management page requested by bobby@gmail.com.
+2025-06-19 14:53:59,109 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:53:59,136 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-19 14:53:59,199 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-19 14:54:14,268 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:54:14,302 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-19 14:54:14,358 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-19 14:54:21,426 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:54:21,451 - app - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-06-19 14:54:21,491 - app - ERROR - HTTP Exception caught: 404 - Not Found
+2025-06-19 14:54:25,313 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:54:25,338 - app - INFO - User management page requested by bobby@gmail.com.
+2025-06-19 14:54:28,838 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:54:28,873 - app - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-06-19 14:54:30,647 - app - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTAzMjU2MTV9.dUVS3DEM3gR65cbXIE9Y15ze9G7xFnioy13qPTZYHjI
+2025-06-19 14:54:30,675 - app - INFO - Device data page requested by bobby@gmail.com.
+2025-06-19 14:54:30,723 - app - INFO - Fetched records for Device ID: all (latest)
+2025-06-19 14:54:36,836 - app - INFO - User logged out.
+2025-06-19 14:54:36,846 - app - INFO - Login page requested.
+2025-06-19 15:28:59,542 - app - INFO - Logger initialized.
+2025-06-19 15:28:59,544 - app - INFO - .env file loaded: True
+2025-06-19 15:28:59,544 - app - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-06-19 15:28:59,545 - app - INFO - Creating FastAPI app
+2025-06-19 15:28:59,546 - app - INFO - SessionMiddleware added.
+2025-06-19 15:28:59,979 - app - INFO - MongoDB connection established and collections initialized.
