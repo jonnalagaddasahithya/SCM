@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Data</title>
+    <meta http-equiv="refresh" content="15">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(3px);
+            color: #333; /* Default text color */
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for readability */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 32px 24px;
+        }
+        h1 {
+            text-align: center;
+            color: #6c757d; /* Light gray color for header */
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        .device-form {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .device-form select {
+            padding: 10px 14px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1.5px solid #6c757d; /* Light gray border */
+            margin-right: 10px;
+            background: #f8f9fa; /* Light background for select */
+            color: #333;
+        }
+        .device-form button {
+            padding: 10px 22px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #6c757d; /* Light gray button */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .device-form button:hover {
+            background: #5a6268; /* Darker gray on hover */
+            transform: translateY(-2px) scale(1.03);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 14px;
+            text-align: left;
+        }
+        th {
+            background: #6c757d; /* Light gray header background */
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+        tr:hover {
+            background-color: #e9ecef; /* Slightly darker gray on hover */
+        }
+        td {
+            color: #333;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 10px 2vw; }
+            table, th, td { font-size: 0.98rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa fa-microchip"></i> Device Data</h1>
+        <form class="device-form" action="/device-data" method="get">
+            <select name="device_id" id="device_id">
+                <option value="">All Devices</option>
+                {% for id in device_ids %}
+                    <option value="{{ id }}" {% if selected_device_id and selected_device_id|int == id %}selected{% endif %}>
+                        Device {{ id }}
+                    </option>
+                {% endfor %}
+            </select>
+            <button type="submit"><i class="fa fa-filter"></i> Filter</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fa fa-battery-half"></i> Battery Level</th>
+                    <th><i class="fa fa-id-badge"></i> Device ID</th>
+                    <th><i class="fa fa-thermometer-half"></i> Temperature</th>
+                    <th><i class="fa fa-route"></i> Route From</th>
+                    <th><i class="fa fa-route"></i> Route To</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if devices %}
+                    {% for device in devices %}
+                    <tr>
+                        <td>{{ device.Battery_Level }}</td>
+                        <td>{{ device.Device_ID }}</td>
+                        <td>{{ device.First_Sensor_temperature }}</td>
+                        <td>{{ device.Route_From }}</td>
+                        <td>{{ device.Route_To }}</td>
+                    </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="5" style="text-align: center;">No data available.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
