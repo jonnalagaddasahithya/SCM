@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SCMXpertLite - Verify 2FA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://production-prod-trueprofile-blogassets-origin.s3.ap-southeast-1.amazonaws.com/uploads/2021/09/shutterstock_1335264878-1024x568.jpg'); /* Background image URL */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: rgba(44, 44, 44, 0.8); /* Semi-transparent background */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 300px;
+    }
+
+    h2 {
+      color: #4caf50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .flash {
+      background: #ff5722;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    button {
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2><i class="fa fa-lock"></i> 2FA Verification</h2>
+    <p>Please enter the 6-digit code from your authenticator app.</p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash">{{ messages[0] }}</div>
+      {% endif %}
+    {% endwith %}
+    <form method="POST">
+      <input type="text" name="token" maxlength="6" pattern="\d{6}" placeholder="Enter 2FA code" required autocomplete="one-time-code">
+      <button type="submit"><i class="fa fa-check"></i> Verify</button>
+    </form>
+  </div>
+</body>
+</html>

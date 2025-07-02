@@ -1,0 +1,516 @@
+2025-07-01 19:59:59,794 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 19:59:59,796 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 19:59:59,796 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:02:31,732 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:02:31,734 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:02:31,734 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:04:44,770 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:04:44,772 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:04:44,772 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:07:26,273 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:07:26,275 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:07:26,275 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:09:16,791 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:09:16,793 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:09:16,794 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:11:28,609 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:11:28,612 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:11:28,613 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:16:52,083 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:16:52,085 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:16:52,085 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:17:53,060 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:17:53,062 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:17:53,063 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:17:53,585 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:18:41,968 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:18:41,969 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:18:41,970 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:18:42,124 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:19:36,301 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:19:36,303 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:19:36,304 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:19:36,618 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:20:29,958 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:20:29,961 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:20:29,961 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:20:30,188 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:22:18,243 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:22:18,245 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:22:18,246 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:22:18,556 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:22:29,450 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:22:29,452 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:22:29,452 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:22:29,724 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:27:07,542 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:27:07,545 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:27:07,545 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:27:07,871 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:34:59,767 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:34:59,769 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:34:59,769 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:35:00,019 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:42:10,485 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:42:10,488 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:42:10,490 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:42:10,688 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:42:47,747 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:42:47,749 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:42:47,750 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:42:47,926 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:43:32,372 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:43:32,375 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:43:32,376 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:43:32,585 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:45:24,796 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:45:24,798 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:45:24,799 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:45:25,015 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:46:00,548 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:46:00,550 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:46:00,551 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:46:00,808 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:46:00,921 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 20:46:00,923 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 20:46:00,924 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 20:46:00,925 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 20:46:00,945 - SCMxpert - INFO - All application routers included.
+2025-07-01 20:46:00,946 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 20:46:13,624 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:46:13,627 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:46:13,628 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:46:13,855 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:46:13,899 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 20:46:13,901 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 20:46:13,901 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 20:46:13,902 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 20:46:13,913 - SCMxpert - INFO - All application routers included.
+2025-07-01 20:46:13,914 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 20:46:21,809 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 20:46:21,817 - SCMxpert - INFO - Login page requested.
+2025-07-01 20:46:22,445 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 20:48:09,430 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-01 20:48:10,698 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-01 20:48:10,714 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODM2OTB9.RBNwxKElPPFtc_8MdgQ9lPLcUzy7JnziMrNAEqjBe0I
+2025-07-01 20:48:10,747 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-01 20:48:14,587 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODM2OTB9.RBNwxKElPPFtc_8MdgQ9lPLcUzy7JnziMrNAEqjBe0I
+2025-07-01 20:48:14,625 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-01 20:48:14,703 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-01 20:49:33,892 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 20:49:33,901 - SCMxpert - INFO - Login page requested.
+2025-07-01 20:49:34,315 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 20:54:29,583 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 20:54:29,586 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 20:54:29,587 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 20:54:30,157 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 20:54:30,222 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 20:54:30,223 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 20:54:30,224 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 20:54:30,225 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 20:54:30,234 - SCMxpert - INFO - All application routers included.
+2025-07-01 20:54:30,235 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 20:54:37,113 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 20:54:37,120 - SCMxpert - INFO - Login page requested.
+2025-07-01 20:54:37,543 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 20:54:51,828 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-01 20:54:52,912 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-01 20:54:52,929 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODQwOTJ9.JxPNBRDFv3RycXBNpXTKjlpmq1H896pFq0AD2bXutb4
+2025-07-01 20:54:52,980 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-01 20:54:57,493 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:10,373 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODQwOTJ9.JxPNBRDFv3RycXBNpXTKjlpmq1H896pFq0AD2bXutb4
+2025-07-01 20:55:10,407 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-01 20:55:10,494 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-01 20:55:10,577 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:30,154 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:30,256 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:32,912 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODQwOTJ9.JxPNBRDFv3RycXBNpXTKjlpmq1H896pFq0AD2bXutb4
+2025-07-01 20:55:32,952 - SCMxpert - INFO - Device data page requested by bobby@gmail.com.
+2025-07-01 20:55:33,053 - SCMxpert - INFO - Fetched records for Device ID: all (latest)
+2025-07-01 20:55:33,146 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:40,572 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODQwOTJ9.JxPNBRDFv3RycXBNpXTKjlpmq1H896pFq0AD2bXutb4
+2025-07-01 20:55:40,604 - SCMxpert - INFO - Device data page requested by bobby@gmail.com.
+2025-07-01 20:55:40,696 - SCMxpert - INFO - Fetched records for Device ID: 1002
+2025-07-01 20:55:40,762 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:49,086 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:49,123 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:50,568 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:50,574 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 20:55:53,390 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODQwOTJ9.JxPNBRDFv3RycXBNpXTKjlpmq1H896pFq0AD2bXutb4
+2025-07-01 20:55:53,430 - SCMxpert - INFO - User management page requested by bobby@gmail.com.
+2025-07-01 20:55:53,597 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /.well-known/appspecific/com.chrome.devtools.json
+2025-07-01 21:05:19,754 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:05:19,757 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:05:19,758 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:05:19,967 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:05:25,729 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:05:25,731 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:05:25,732 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:05:25,936 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:05:26,021 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 21:05:26,022 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 21:05:26,023 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 21:05:26,024 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 21:05:26,041 - SCMxpert - INFO - All application routers included.
+2025-07-01 21:05:26,042 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 21:05:38,949 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:05:38,952 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:05:38,954 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:05:39,176 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:05:39,228 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 21:05:39,229 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 21:05:39,230 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 21:05:39,231 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 21:05:39,244 - SCMxpert - INFO - All application routers included.
+2025-07-01 21:05:39,244 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 21:05:45,178 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 21:05:45,187 - SCMxpert - INFO - Login page requested.
+2025-07-01 21:15:14,029 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:15:14,032 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:15:14,034 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:15:14,293 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:15:14,349 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 21:15:14,351 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 21:15:14,352 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 21:15:14,353 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 21:15:14,382 - SCMxpert - INFO - All application routers included.
+2025-07-01 21:15:14,384 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 21:15:19,086 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 21:15:19,149 - SCMxpert - INFO - Login page requested.
+2025-07-01 21:15:20,134 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 21:15:35,379 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-01 21:15:36,588 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-01 21:15:36,606 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODUzMzZ9.tEx2c_X71uG0u9EyBrG0gLj6Eaoz9oADaWlT6xxlan0
+2025-07-01 21:15:36,642 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-01 21:15:39,842 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODUzMzZ9.tEx2c_X71uG0u9EyBrG0gLj6Eaoz9oADaWlT6xxlan0
+2025-07-01 21:15:39,878 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-01 21:15:39,958 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-01 21:24:14,908 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:24:14,910 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:24:14,911 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:24:15,441 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:24:15,523 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 21:24:15,525 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 21:24:15,525 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 21:24:15,526 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 21:24:15,540 - SCMxpert - INFO - All application routers included.
+2025-07-01 21:24:15,541 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 21:24:20,360 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 21:24:20,368 - SCMxpert - INFO - Login page requested.
+2025-07-01 21:24:43,194 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-01 21:24:44,247 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-01 21:24:44,263 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODU4ODR9.4Qf0sbVytvW2rDFSuVYg0fJoObNJ4gSVNiE1r2etNcc
+2025-07-01 21:24:44,304 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-01 21:25:05,975 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODU4ODR9.4Qf0sbVytvW2rDFSuVYg0fJoObNJ4gSVNiE1r2etNcc
+2025-07-01 21:25:06,092 - SCMxpert - INFO - Device data page requested by bobby@gmail.com.
+2025-07-01 21:25:06,230 - SCMxpert - INFO - Fetched records for Device ID: all (latest)
+2025-07-01 21:25:10,239 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzODU4ODR9.4Qf0sbVytvW2rDFSuVYg0fJoObNJ4gSVNiE1r2etNcc
+2025-07-01 21:25:10,277 - SCMxpert - INFO - Device data page requested by bobby@gmail.com.
+2025-07-01 21:25:10,363 - SCMxpert - INFO - Fetched records for Device ID: 1000
+2025-07-01 21:35:41,194 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 21:35:41,198 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 21:35:41,199 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 21:35:41,584 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 21:35:41,712 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 21:35:41,715 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 21:35:41,717 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 21:35:41,718 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 21:35:41,758 - SCMxpert - INFO - All application routers included.
+2025-07-01 21:35:41,764 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 21:35:47,520 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 21:35:47,528 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:22:46,027 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 22:22:46,043 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:22:46,547 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 22:26:06,450 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-01 22:26:06,454 - SCMxpert - INFO - .env file loaded: True
+2025-07-01 22:26:06,455 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-01 22:26:06,667 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-01 22:26:06,716 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-01 22:26:06,718 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-01 22:26:06,718 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-01 22:26:06,719 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-01 22:26:06,736 - SCMxpert - INFO - All application routers included.
+2025-07-01 22:26:06,737 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-01 22:26:23,413 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 22:26:23,425 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:26:23,806 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-01 22:26:28,134 - SCMxpert - INFO - Signup page requested.
+2025-07-01 22:34:42,537 - SCMxpert - INFO - Signup page requested.
+2025-07-01 22:36:04,579 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 22:36:04,619 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:36:06,842 - SCMxpert - INFO - Signup page requested.
+2025-07-01 22:36:34,813 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-01 22:36:34,858 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:36:36,599 - SCMxpert - INFO - Signup page requested.
+2025-07-01 22:37:04,714 - SCMxpert - INFO - Signup form submitted for email: j@gmail.com
+2025-07-01 22:37:05,573 - SCMxpert - INFO - Account created successfully for j@gmail.com with role user.
+2025-07-01 22:37:05,586 - SCMxpert - INFO - Login page requested.
+2025-07-01 22:43:56,937 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-01 22:43:57,498 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-01 22:43:57,509 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzOTA2Mzd9.lVdZEVye4L3QMKTVNaRnjlekD4QScrwDDR3N8NvbnJ4
+2025-07-01 22:43:57,550 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-01 22:44:10,149 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTEzOTA2Mzd9.lVdZEVye4L3QMKTVNaRnjlekD4QScrwDDR3N8NvbnJ4
+2025-07-01 22:44:10,188 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-01 22:44:10,250 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-02 09:59:03,876 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 09:59:03,880 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 09:59:03,882 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 09:59:04,462 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 09:59:04,561 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 09:59:04,563 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 09:59:04,564 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 09:59:04,564 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 09:59:04,579 - SCMxpert - INFO - All application routers included.
+2025-07-02 09:59:04,580 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 09:59:13,900 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 09:59:13,907 - SCMxpert - INFO - Login page requested.
+2025-07-02 09:59:14,368 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-02 10:00:26,054 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 10:00:27,093 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 10:00:27,115 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzEyMjd9.X8pNLTuGBebVOtRIvasMVqfedbSllEGZkGQTbAeyiVM
+2025-07-02 10:00:27,147 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 10:00:30,054 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzEyMjd9.X8pNLTuGBebVOtRIvasMVqfedbSllEGZkGQTbAeyiVM
+2025-07-02 10:00:30,085 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-02 10:00:30,146 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-02 10:17:18,630 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:17:18,637 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:17:22,977 - SCMxpert - DEBUG - JWT token from cookie: None
+2025-07-02 10:17:22,979 - SCMxpert - ERROR - JWT token not found in cookie or header.
+2025-07-02 10:17:22,985 - SCMxpert - ERROR - HTTP Exception caught: 401 - Not authenticated for path: /create-shipment
+2025-07-02 10:17:37,651 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 10:17:38,730 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 10:17:38,744 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzIyNTh9.8BJs-LVBus0qz9prgNlNGIS5SgjlbMosh-K2qeKYTU8
+2025-07-02 10:17:38,820 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 10:17:40,566 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzIyNTh9.8BJs-LVBus0qz9prgNlNGIS5SgjlbMosh-K2qeKYTU8
+2025-07-02 10:17:40,638 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-02 10:17:40,710 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-02 10:17:47,014 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzIyNTh9.8BJs-LVBus0qz9prgNlNGIS5SgjlbMosh-K2qeKYTU8
+2025-07-02 10:17:47,081 - SCMxpert - INFO - Create shipment page requested by bobby@gmail.com.
+2025-07-02 10:18:38,105 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzIyNTh9.8BJs-LVBus0qz9prgNlNGIS5SgjlbMosh-K2qeKYTU8
+2025-07-02 10:18:38,195 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-02 10:18:38,333 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-02 10:26:49,978 - SCMxpert - ERROR - HTTP Exception caught: 401 - Incorrect username or password for path: /token
+2025-07-02 10:27:50,300 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:27:50,311 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:27:51,288 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-02 10:27:52,664 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:31:03,084 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:31:03,086 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:31:03,087 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:31:03,345 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:31:03,392 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:31:03,393 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:31:03,394 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:31:03,394 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:31:03,402 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:31:03,402 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:31:11,192 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:31:11,194 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:31:11,195 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:31:11,450 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:31:11,490 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:31:11,491 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:31:11,492 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:31:11,493 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:31:11,505 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:31:11,505 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:31:17,490 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:31:17,504 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:31:19,740 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:31:32,710 - SCMxpert - INFO - Signup form submitted for email: cj@gmail.com
+2025-07-02 10:31:33,161 - SCMxpert - INFO - Assigning default role 'user' for new signup: cj@gmail.com.
+2025-07-02 10:31:33,895 - SCMxpert - INFO - Account created successfully for cj@gmail.com with role user.
+2025-07-02 10:31:33,904 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:31:57,055 - SCMxpert - ERROR - HTTP Exception caught: 405 - Method Not Allowed for path: /login
+2025-07-02 10:32:27,534 - SCMxpert - ERROR - HTTP Exception caught: 405 - Method Not Allowed for path: /login
+2025-07-02 10:33:11,548 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:33:11,550 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:33:11,551 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:33:11,796 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:33:11,850 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:33:11,851 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:33:11,851 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:33:11,852 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:33:11,861 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:33:11,862 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:33:15,890 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:33:15,930 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:33:17,071 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-02 10:33:18,590 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:33:33,519 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 10:33:34,858 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 10:33:34,883 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzMyMTR9.XiqOtQH5CRNTswmofh9xqDBwGIus-keyyG67P2DP6bM
+2025-07-02 10:33:34,966 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 10:39:25,650 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:39:25,652 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:39:25,653 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:39:25,900 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:39:25,941 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:39:25,943 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:39:25,943 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:39:25,944 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:39:25,955 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:39:25,956 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:39:30,957 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:39:30,965 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:39:34,499 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:39:37,952 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:39:50,673 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 10:39:51,750 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 10:39:51,761 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzM1OTF9.yCMkb9f_oBdZYvdNSVQ_MxssyT-dtfYTiK28U6PkiK0
+2025-07-02 10:39:51,843 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 10:39:55,762 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzM1OTF9.yCMkb9f_oBdZYvdNSVQ_MxssyT-dtfYTiK28U6PkiK0
+2025-07-02 10:39:55,833 - SCMxpert - INFO - Edit shipment page requested by bobby@gmail.com.
+2025-07-02 10:39:55,942 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png
+2025-07-02 10:40:01,751 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzM1OTF9.yCMkb9f_oBdZYvdNSVQ_MxssyT-dtfYTiK28U6PkiK0
+2025-07-02 10:40:01,814 - SCMxpert - INFO - Create shipment page requested by bobby@gmail.com.
+2025-07-02 10:41:35,841 - SCMxpert - INFO - User logged out.
+2025-07-02 10:41:35,849 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:41:38,243 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:43:09,805 - SCMxpert - INFO - User logged out.
+2025-07-02 10:43:09,815 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:43:12,825 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:47:02,609 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:47:02,611 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:47:02,611 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:47:03,021 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:47:23,928 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:47:23,930 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:47:23,931 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:47:24,153 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:47:29,791 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:47:29,793 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:47:29,795 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:47:30,057 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:47:30,097 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:47:30,098 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:47:30,099 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:47:30,100 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:47:30,112 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:47:30,114 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:47:43,329 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:47:43,330 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:47:43,331 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:47:43,571 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:47:43,619 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:47:43,620 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:47:43,621 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:47:43,622 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:47:43,631 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:47:43,632 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:47:48,877 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:47:48,931 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:47:51,366 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:48:04,795 - SCMxpert - INFO - Signup form submitted for email: ammulu123@gmail.com
+2025-07-02 10:48:05,299 - SCMxpert - WARNING - Signup failed: Email ammulu123@gmail.com already registered.
+2025-07-02 10:48:05,312 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:48:26,104 - SCMxpert - INFO - Signup form submitted for email: cjsm@gmail.com
+2025-07-02 10:48:26,172 - SCMxpert - INFO - Assigning default role 'user' for new signup: cjsm@gmail.com.
+2025-07-02 10:48:26,884 - SCMxpert - INFO - Account created successfully for cjsm@gmail.com with role user.
+2025-07-02 10:48:26,893 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:48:44,076 - SCMxpert - ERROR - HTTP Exception caught: 405 - Method Not Allowed for path: /login
+2025-07-02 10:51:52,163 - SCMxpert - ERROR - HTTP Exception caught: 405 - Method Not Allowed for path: /login
+2025-07-02 10:51:58,137 - SCMxpert - ERROR - HTTP Exception caught: 405 - Method Not Allowed for path: /login
+2025-07-02 10:53:10,634 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:53:10,636 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:53:10,636 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:53:10,887 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:53:51,725 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:53:51,727 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:53:51,728 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:53:51,962 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:54:44,312 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:54:44,314 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:54:44,314 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:54:44,559 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:54:56,004 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:54:56,006 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:54:56,007 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:54:56,212 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:58:49,517 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 10:58:49,522 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 10:58:49,524 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 10:58:49,877 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 10:58:49,991 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 10:58:49,993 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 10:58:49,995 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 10:58:49,996 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 10:58:50,027 - SCMxpert - INFO - All application routers included.
+2025-07-02 10:58:50,029 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 10:59:00,577 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 10:59:00,590 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:59:03,203 - SCMxpert - INFO - Signup page requested.
+2025-07-02 10:59:20,439 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 10:59:21,722 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 10:59:21,732 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0MzQ3NjF9.y4qWQGmCqEYeXVU0J0Cb9p6C9aLEh0fY-um3bon_Pzk
+2025-07-02 10:59:21,817 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 10:59:25,081 - SCMxpert - INFO - User logged out.
+2025-07-02 10:59:25,089 - SCMxpert - INFO - Login page requested.
+2025-07-02 10:59:38,357 - SCMxpert - INFO - Login attempt for username: ss@gmail.com
+2025-07-02 10:59:39,031 - SCMxpert - INFO - Login successful for ss@gmail.com with role user.
+2025-07-02 10:59:39,049 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzc0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc1MTQzNDc3OH0.ovd5Ysrje2s3Tx8V_rl7FIAugGPJDB0n9gRfQ0HHcIc
+2025-07-02 10:59:39,126 - SCMxpert - INFO - Dashboard requested by ss@gmail.com (Role: user).
+2025-07-02 13:16:44,704 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 13:16:44,707 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 13:16:44,708 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 13:16:45,166 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 13:16:45,245 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 13:16:45,246 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 13:16:45,247 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 13:16:45,247 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 13:16:45,264 - SCMxpert - INFO - All application routers included.
+2025-07-02 13:16:45,264 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 14:14:01,128 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 14:14:01,139 - SCMxpert - INFO - Login page requested.
+2025-07-02 14:14:01,556 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-02 14:14:03,573 - SCMxpert - INFO - Signup page requested.
+2025-07-02 14:23:53,066 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 14:23:53,071 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 14:23:53,073 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 14:23:53,747 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 14:25:49,663 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 14:25:49,666 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 14:25:49,666 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 14:25:50,036 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 14:25:50,125 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 14:25:50,129 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 14:25:50,130 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 14:25:50,132 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 14:25:50,147 - SCMxpert - INFO - All application routers included.
+2025-07-02 14:25:50,148 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 14:25:55,620 - SCMxpert - INFO - Logger initialized in config.py.
+2025-07-02 14:25:55,623 - SCMxpert - INFO - .env file loaded: True
+2025-07-02 14:25:55,623 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-07-02 14:25:55,966 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-07-02 14:25:56,029 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-07-02 14:25:56,031 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-07-02 14:25:56,033 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-07-02 14:25:56,033 - SCMxpert - INFO - SessionMiddleware added.
+2025-07-02 14:25:56,045 - SCMxpert - INFO - All application routers included.
+2025-07-02 14:25:56,046 - SCMxpert - INFO - FastAPI application setup complete.
+2025-07-02 14:26:00,375 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 14:26:00,471 - SCMxpert - INFO - Login page requested.
+2025-07-02 14:26:01,876 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-07-02 14:26:02,919 - SCMxpert - INFO - Signup page requested.
+2025-07-02 14:26:20,228 - SCMxpert - INFO - Signup form submitted for email: cjsmm@gmail.com
+2025-07-02 14:26:22,071 - SCMxpert - INFO - Assigning default role 'user' for new signup: cjsmm@gmail.com.
+2025-07-02 14:26:22,872 - SCMxpert - INFO - Account created successfully for cjsmm@gmail.com with role user.
+2025-07-02 14:26:22,891 - SCMxpert - INFO - Login page requested.
+2025-07-02 14:26:38,700 - SCMxpert - INFO - Login attempt for username: bobby@gmail.com
+2025-07-02 14:26:39,451 - SCMxpert - INFO - Login successful for bobby@gmail.com with role admin.
+2025-07-02 14:26:39,461 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib2JieUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE3NTE0NDcxOTl9.Tcl33mkyvV4nr-6lcLG0zIleE8_4H7naA241k2nZN74
+2025-07-02 14:26:39,521 - SCMxpert - INFO - Admin dashboard requested by bobby@gmail.com.
+2025-07-02 14:27:10,015 - SCMxpert - INFO - Root endpoint accessed, redirecting to /login.
+2025-07-02 14:27:10,020 - SCMxpert - INFO - Login page requested.
+2025-07-02 14:27:11,708 - SCMxpert - INFO - Signup page requested.
+2025-07-02 14:27:40,074 - SCMxpert - INFO - Signup form submitted for email: js@gmail.com
+2025-07-02 14:27:40,149 - SCMxpert - INFO - Assigning default role 'user' for new signup: js@gmail.com.
+2025-07-02 14:27:40,999 - SCMxpert - INFO - Account created successfully for js@gmail.com with role user.
+2025-07-02 14:27:41,013 - SCMxpert - INFO - Login page requested.
+2025-07-02 14:27:56,556 - SCMxpert - INFO - Login attempt for username: js@gmail.com
+2025-07-02 14:27:57,510 - SCMxpert - INFO - Login successful for js@gmail.com with role user.
+2025-07-02 14:27:57,532 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqc0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc1MTQ0NzI3N30.kBbB_mqFc0HbmhB8urg3eYVvn62tsYASNEEFfZiaZ6s
+2025-07-02 14:27:57,772 - SCMxpert - INFO - Dashboard requested by js@gmail.com (Role: user).
+2025-07-02 14:28:28,474 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqc0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc1MTQ0NzI3N30.kBbB_mqFc0HbmhB8urg3eYVvn62tsYASNEEFfZiaZ6s
+2025-07-02 14:28:28,728 - SCMxpert - INFO - Create shipment page requested by js@gmail.com.

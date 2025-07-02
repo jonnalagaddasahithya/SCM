@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCMXpertLite - Login</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(145deg, #f0e5f0, #e0f7fa);
+      animation: backgroundShift 10s ease infinite alternate;
+    }
+
+    @keyframes backgroundShift {
+      0% {
+        background: linear-gradient(145deg, #f0e5f0, #e0f7fa);
+      }
+      100% {
+        background: linear-gradient(145deg, #e0ffe8, #f9f9ff);
+      }
+    }
+
+    .login-container {
+      width: 90%;
+      max-width: 900px;
+      display: flex;
+      background: #ffffffee;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      animation: fadeIn 1s ease-out forwards;
+      flex-direction: column; /* Change to column layout */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .left-panel {
+      background: linear-gradient(135deg, #f9c2c2, #f9e6c2);
+      color: #4a4a4a;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .left-panel h3 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .left-panel p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .alt-button {
+      background: #ffffff;
+      color: #3973ac;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .alt-button:hover {
+      background: #f0f8ff;
+      transform: scale(1.05);
+    }
+
+    .right-panel {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-panel h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .right-panel p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    form {
+      width: 100%;
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .input-group {
+      position: relative;
+    }
+
+    .input-group i {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #76b9ed;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 12px 12px 40px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      background: #f7fafd;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #76b9ed;
+      outline: none;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #222;
+      margin-left: 4px;
+    }
+
+    .g-recaptcha {
+      margin-top: 10px;
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(90deg, #76b9ed, #b2fefa);
+      color: white;
+      border: none;
+      padding: 13px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .flash {
+      background: #7fb3d5;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3973ac;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #2c3e50;
+    }
+
+    #error-message {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <!-- New Here Section -->
+    <div class="left-panel">
+      <h3>New Here?</h3>
+      <p>Create your account to get started with SCMXpertLite.</p>
+      <a href="{{ url_for('signup') }}">
+        <button class="alt-button">SIGN UP</button>
+      </a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-panel">
+      <h2>SCMXPERTLITE</h2>
+      <h2>Login</h2>
+      <p>Enter your credentials to access your dashboard.</p>
+
+      {% if flash %}
+        <div class="flash">{{ flash }}</div>
+      {% endif %}
+
+      <form method="POST">
+        <label for="username">Email Address</label>
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" id="username" name="username" placeholder="Email Address" required>
+        </div>
+
+        <label for="password">Password</label>
+        <div class="input-group">
+          <i class="fa fa-lock"></i>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
+        <button type="submit">Login</button>
+      </form>
+
+      <p style="margin-top: 15px;">
+        <a href="/forgot-password">Forgot Password?</a>
+      </p>
+      <div id="error-message"></div>
+    </div>
+  </div>
+</body>
+
+</html>

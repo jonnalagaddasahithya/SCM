@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Shipment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 32px 24px;
+            max-width: 500px;
+            margin: 60px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 22px;
+            color: #003366;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 3px;
+            margin-top: 8px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1.5px solid #bcd4e6;
+            border-radius: 8px;
+            font-size: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            color: #222;
+            margin-bottom: 14px;
+            transition: border 0.2s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #006699;
+            outline: none;
+        }
+
+        button {
+            background: linear-gradient(to right, #006699, #00a8cc);
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.2s ease;
+            margin-top: 14px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #004c6d, #0088a9);
+            transform: translateY(-2px) scale(1.03);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 18px;
+            color: #003366;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005b99;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2><i class="fa fa-edit"></i> Edit Shipment</h2>
+        <form action="/edit-shipment/{{ shipment.shipment_id }}" method="post">
+            <label>PO Number</label>
+            <input type="text" name="po_number" value="{{ shipment.po_number }}" required>
+
+            <label>Route Details</label>
+            <input type="text" name="route_details" value="{{ shipment.route_details }}" required>
+
+            <label>Device</label>
+            <input type="text" name="device" value="{{ shipment.device }}" required>
+
+            <label>Goods Type</label>
+            <input type="text" name="goods_type" value="{{ shipment.goods_type }}" required>
+
+            <label>Expected Delivery Date</label>
+            <input type="date" name="expected_delivery_date" value="{{ shipment.expected_delivery_date }}" required>
+
+            <button type="submit"><i class="fa fa-save"></i> Update Shipment</button>
+        </form>
+        <a href="/edit-shipment"><i class="fa fa-arrow-left"></i> Back to Shipments</a>
+    </div>
+</body>
+</html>
