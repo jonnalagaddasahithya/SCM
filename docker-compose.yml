@@ -73,7 +73,7 @@ services:
       - kafka_data:/bitnami/kafka
     networks:
       - my_network
-
+                                             
 volumes:
   kafka_data:
 
