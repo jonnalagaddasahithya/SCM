@@ -65,7 +65,7 @@ RESET_PASSWORD_ROUTE = "/reset-password"
 
 # --- Datetime Format Constant ---
 DATETIME_DISPLAY_FORMAT = "%Y-%m-%d %H:%M:%S UTC"
-
+   
 
 logger.info("Creating FastAPI app")
 # Initialize app
@@ -132,7 +132,7 @@ async def get_current_user(request: Request, token: str = Depends(oauth2_scheme)
     if not jwt_token:
         logger.error("JWT token not found in cookie or header.")
         raise credentials_exception
-
+         
     try:
         payload = jwt.decode(jwt_token, SECRET_KEY, algorithms=[ALGORITHM])
         username: str = payload.get("sub")
