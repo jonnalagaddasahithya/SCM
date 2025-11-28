@@ -514,3 +514,23 @@
 2025-07-02 14:27:57,772 - SCMxpert - INFO - Dashboard requested by js@gmail.com (Role: user).
 2025-07-02 14:28:28,474 - SCMxpert - DEBUG - JWT token from cookie: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqc0BnbWFpbC5jb20iLCJyb2xlIjoidXNlciIsImV4cCI6MTc1MTQ0NzI3N30.kBbB_mqFc0HbmhB8urg3eYVvn62tsYASNEEFfZiaZ6s
 2025-07-02 14:28:28,728 - SCMxpert - INFO - Create shipment page requested by js@gmail.com.
+2025-11-28 17:52:35,241 - SCMxpert - INFO - Logger initialized in config.py.
+2025-11-28 17:52:35,247 - SCMxpert - INFO - .env file loaded: True
+2025-11-28 17:52:35,248 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-11-28 17:52:36,604 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-11-28 17:52:36,900 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-11-28 17:52:36,916 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-11-28 17:52:36,925 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-11-28 17:52:36,947 - SCMxpert - INFO - SessionMiddleware added.
+2025-11-28 17:52:37,048 - SCMxpert - INFO - All application routers included.
+2025-11-28 17:52:37,069 - SCMxpert - INFO - FastAPI application setup complete.
+2025-11-28 17:52:53,408 - SCMxpert - INFO - Logger initialized in config.py.
+2025-11-28 17:52:53,415 - SCMxpert - INFO - .env file loaded: True
+2025-11-28 17:52:53,418 - SCMxpert - DEBUG - DEBUG: Raw value from os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'): '10'
+2025-11-28 17:52:54,341 - SCMxpert - INFO - MongoDB connection established and collections initialized.
+2025-11-28 17:52:54,494 - SCMxpert - INFO - Starting FastAPI application setup in main.py
+2025-11-28 17:52:54,495 - SCMxpert - INFO - Static files mounted from 'static' directory.
+2025-11-28 17:52:54,495 - SCMxpert - INFO - Jinja2Templates initialized with 'templates' directory.
+2025-11-28 17:52:54,496 - SCMxpert - INFO - SessionMiddleware added.
+2025-11-28 17:52:54,537 - SCMxpert - INFO - All application routers included.
+2025-11-28 17:52:54,542 - SCMxpert - INFO - FastAPI application setup complete.
