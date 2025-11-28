@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Code</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1976d2;
+            --primary-dark: #1565c0;
+            --primary-light: #bbdefb;
+            --secondary: #42a5f5;
+            --accent: #29b6f6;
+            --light: #ffffff;
+            --dark: #212121;
+            --gray: #757575;
+            --light-gray: #e0e0e0;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+            --shadow: 0 8px 20px rgba(25, 118, 210, 0.15);
+            --shadow-hover: 0 12px 24px rgba(25, 118, 210, 0.25);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .verify-code-container {
+            background: var(--light);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .header {
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        .header i {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            margin: 0 auto 15px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: var(--dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-label i {
+            color: var(--primary);
+        }
+
+        .form-control {
+            border: 2px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: var(--transition);
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+            outline: none;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .alert {
+            border-radius: var(--border-radius);
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .alert-success {
+            background: rgba(76, 175, 80, 0.15);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            color: #2e7d32;
+        }
+
+        .alert-danger {
+            background: rgba(244, 67, 54, 0.15);
+            border: 1px solid rgba(244, 67, 54, 0.3);
+            color: #c62828;
+        }
+
+        .alert i {
+            font-size: 1.2rem;
+        }
+
+        .instructions {
+            background: var(--primary-light);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .instructions h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .instructions p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .verify-code-container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            .header {
+                font-size: 1.5rem;
+            }
+            
+            .header i {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .form-control {
+                font-size: 1.2rem;
+                letter-spacing: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="verify-code-container">
+        <div class="header">
+            <i class="fas fa-key"></i>
+            <h2>Verify Your Email</h2>
+        </div>
+        
+        {% if flash %}
+        <div class="alert alert-danger">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>{{ flash }}</div>
+        </div>
+        {% endif %}
+        
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <p>Enter the 6-digit verification code that was sent to your email address to complete your registration.</p>
+        </div>
+        
+        <form method="POST" action="/verify-code">
+            <div class="form-group">
+                <label class="form-label"><i class="fas fa-key"></i> Verification Code</label>
+                <input type="text" class="form-control" name="verification_code" placeholder="Enter 6-digit code" maxlength="6" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-check"></i> Verify Code
+            </button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Auto-focus and auto-advance for verification code input
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeInput = document.querySelector('input[name="verification_code"]');
+            if (codeInput) {
+                codeInput.focus();
+                
+                codeInput.addEventListener('input', function() {
+                    // Convert to uppercase
+                    this.value = this.value.toUpperCase();
+                    
+                    // Auto-submit when 6 characters are entered
+                    if (this.value.length === 6) {
+                        // Optional: auto-submit the form
+                        // this.form.submit();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

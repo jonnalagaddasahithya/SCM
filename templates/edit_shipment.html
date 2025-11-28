@@ -2,356 +2,431 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edit Shipments</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body, html {
+    :root {
+      --primary: #1976d2;
+      --primary-dark: #1565c0;
+      --primary-light: #bbdefb;
+      --secondary: #42a5f5;
+      --accent: #29b6f6;
+      --light: #ffffff;
+      --dark: #212121;
+      --gray: #757575;
+      --light-gray: #e0e0e0;
+      --success: #4caf50;
+      --warning: #ff9800;
+      --danger: #f44336;
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+      --shadow: 0 8px 20px rgba(25, 118, 210, 0.15);
+      --shadow-hover: 0 12px 24px rgba(25, 118, 210, 0.25);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: var(--dark);
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-      background-image: url('/mnt/data/5dc4094e-f706-450e-ae65-e0b57e2525d7.png');
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
     }
-    .topbar {
-      background: rgba(255,255,255,0.22);
-      backdrop-filter: blur(8px);
-      padding: 20px;
+
+    /* Sidebar Styles */
+    .sidebar {
+      height: 100vh;
+      width: 260px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, var(--primary), var(--primary-dark));
+      color: var(--light);
+      padding: 20px 0;
+      box-shadow: var(--shadow);
+      z-index: 1000;
+      overflow-y: auto;
+      transition: var(--transition);
+    }
+
+    .sidebar-header {
+      padding: 0 20px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .sidebar-header h2 {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 18px rgba(0,0,0,0.08);
-      border-bottom: 1.5px solid rgba(39,174,96,0.09);
+      gap: 12px;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
-    .topbar h1 {
-      color: #1976d2;
-      font-size: 2rem;
-      font-weight: 700;
+
+    .sidebar-header h2 i {
+      background: rgba(255, 255, 255, 0.2);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sidebar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 0 15px;
+    }
+
+    .sidebar-nav a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      padding: 12px 15px;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+      transition: var(--transition);
+      margin-bottom: 5px;
+    }
+
+    .sidebar-nav a:hover, .sidebar-nav a.active {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--light);
+    }
+
+    .sidebar-nav a.logout-btn {
+      background: rgba(244, 67, 54, 0.2);
+      margin-top: auto;
+      margin-bottom: 10px;
+    }
+
+    .sidebar-nav a.logout-btn:hover {
+      background: rgba(244, 67, 54, 0.3);
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 260px;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: var(--light);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: var(--shadow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header h1 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      font-weight: 600;
       margin: 0;
-      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .header h1 i {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light);
+    }
+
+    .content-card {
+      background: var(--light);
+      border-radius: var(--border-radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      color: var(--primary);
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid var(--primary-light);
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .nav-menu {
+
+    .section-title i {
+      background: var(--primary-light);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
-      gap: 16px;
-    }
-    .nav-menu a, .logout-btn {
-      text-decoration: none;
-      font-weight: 500;
-      color: #222;
-      padding: 9px 16px;
-      border-radius: 8px;
-      transition: background 0.3s, color 0.3s;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-    .nav-menu a:hover, .logout-btn:hover {
-      background: rgba(39,174,96,0.08);
-      color: #27ae60;
-    }
-    .logout-btn {
-      background: linear-gradient(90deg, #27ae60 0%, #36b1f4 100%);
-      color: #fff !important;
-      font-weight: 600;
-      box-shadow: 0 2px 8px rgba(39,174,96,0.13);
-      border: none;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .logout-btn:hover {
-      background: linear-gradient(90deg, #1e8449 0%, #2980b9 100%);
-      color: #fff !important;
-      transform: translateY(-2px) scale(1.03);
-    }
-    .container {
-      padding: 60px 10vw 60px;
-      display: flex;
       justify-content: center;
+      color: var(--primary);
     }
-    .edit-shipment-wrapper {
-      background: rgba(255,255,255,0.19);
-      backdrop-filter: blur(7px);
-      padding: 40px 24px;
-      border-radius: 18px;
-      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.09);
-      width: 100%;
-      max-width: 1100px;
+
+    /* Table Styles */
+    .table-container {
+      overflow-x: auto;
     }
-    h2 {
-      text-align: center;
-      color: #1976d2;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      margin-bottom: 24px;
-    }
-    #searchInput {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1.5px solid #d1d8e0;
-      margin-bottom: 18px;
-      font-size: 1rem;
-      background: rgba(255,255,255,0.85);
-      color: #222;
-    }
-    #searchInput:focus {
-      border-color: #27ae60;
-      outline: none;
-    }
-    table {
+
+    .table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
-      background: rgba(255,255,255,0.85);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 2px 10px rgba(39,174,96,0.09);
+      margin-bottom: 0;
     }
-    th, td {
-      padding: 14px;
-      text-align: center;
-      border: 1px solid #e0e0e0;
-    }
-    th {
-      background: linear-gradient(90deg, #36b1f4 0%, #27ae60 100%);
-      color: white;
+
+    .table th {
+      background-color: var(--primary);
+      color: var(--light);
       font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
+      text-align: left;
+      padding: 15px;
     }
-    .action-buttons a {
-      padding: 8px 16px;
-      margin: 0 3px;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.98rem;
-      transition: background 0.2s;
-      display: inline-block;
+
+    .table td {
+      padding: 15px;
+      border-bottom: 1px solid var(--light-gray);
     }
-    .action-buttons a.edit {
-      background: linear-gradient(90deg, #27ae60 0%, #36b1f4 100%);
+
+    .table tbody tr:hover {
+      background-color: var(--primary-light);
     }
-    .action-buttons a.delete {
-      background: linear-gradient(90deg, #e74c3c 0%, #f39c12 100%);
+
+    .table .actions {
+      display: flex;
+      gap: 10px;
     }
-    .action-buttons a.edit:hover {
-      background: linear-gradient(90deg, #1e8449 0%, #2980b9 100%);
-    }
-    .action-buttons a.delete:hover {
-      background: linear-gradient(90deg, #c0392b 0%, #e67e22 100%);
-    }
-    /* Modal */
-    .modal {
-      display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;
-      background-color: rgba(0,0,0,0.4);
-    }
-    .modal-content {
-      background: rgba(255,255,255,0.95);
-      margin: 5% auto; padding: 24px; border: 1px solid #888; width: 90%; max-width: 480px; border-radius: 14px;
-      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.09);
-      position: relative;
-    }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-      cursor: pointer;
-      position: absolute;
-      right: 18px;
-      top: 8px;
-    }
-    .close:hover, .close:focus { color: #1976d2; text-decoration: none; }
-    .modal-content label {
-      font-weight: 600;
-      color: #1976d2;
-      margin-bottom: 3px;
-      margin-top: 8px;
-      display: block;
-    }
-    .modal-content input, .modal-content select, .modal-content textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1.5px solid #d1d8e0;
-      margin-bottom: 10px;
-      font-size: 1rem;
-      background: rgba(255,255,255,0.85);
-      color: #222;
-    }
-    .modal-content input:focus, .modal-content select:focus, .modal-content textarea:focus {
-      border-color: #27ae60;
-      outline: none;
-    }
-    .modal-content button {
-      background: linear-gradient(90deg, #27ae60 0%, #36b1f4 100%);
-      color: #fff;
+
+    .btn {
+      padding: 8px 15px;
+      border-radius: var(--border-radius);
+      font-weight: 500;
+      font-size: 0.9rem;
       border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
       cursor: pointer;
-      padding: 12px;
-      width: 100%;
-      margin-top: 12px;
-      transition: background 0.2s, transform 0.2s;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
     }
-    .modal-content button:hover {
-      background: linear-gradient(90deg, #1e8449 0%, #2980b9 100%);
-      transform: translateY(-2px) scale(1.03);
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--light);
     }
-    @media (max-width: 700px) {
-      .container { padding: 20px 2vw; }
-      .edit-shipment-wrapper { padding: 18px 2vw; }
-      th, td { font-size: 0.98rem; }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .btn-warning {
+      background: linear-gradient(135deg, var(--warning), #ef6c00);
+      color: var(--light);
+    }
+
+    .btn-warning:hover {
+      background: linear-gradient(135deg, #ef6c00, var(--warning));
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+    }
+
+    .btn-danger {
+      background: linear-gradient(135deg, var(--danger), #d32f2f);
+      color: var(--light);
+    }
+
+    .btn-danger:hover {
+      background: linear-gradient(135deg, #d32f2f, var(--danger));
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
+    }
+
+    /* Alert Styles */
+    .alert {
+      border-radius: var(--border-radius);
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .alert-success {
+      background: rgba(76, 175, 80, 0.15);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      color: #2e7d32;
+    }
+
+    .alert-danger {
+      background: rgba(244, 67, 54, 0.15);
+      border: 1px solid rgba(244, 67, 54, 0.3);
+      color: #c62828;
+    }
+
+    .alert i {
+      font-size: 1.2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .sidebar {
+        width: 80px;
+      }
+      
+      .sidebar-header h2 span,
+      .sidebar-nav a span {
+        display: none;
+      }
+      
+      .sidebar-header h2 {
+        justify-content: center;
+      }
+      
+      .sidebar-nav a {
+        justify-content: center;
+      }
+      
+      .main-content {
+        margin-left: 80px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 0;
+        overflow: hidden;
+      }
+      
+      .main-content {
+        margin-left: 0;
+      }
+      
+      .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+      
+      .table-container {
+        font-size: 0.9rem;
+      }
+      
+      .table th,
+      .table td {
+        padding: 10px 8px;
+      }
+      
+      .btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        gap: 4px;
+      }
     }
   </style>
 </head>
 <body>
-<div class="topbar">
-  <h1><i class="fa fa-truck"></i> Shipment Dashboard</h1>
-  <div class="nav-menu">
-    <a href="/admin-dashboard"><i class="fa fa-home"></i> Home</a>
-    <a href="/create-shipment"><i class="fa fa-plus"></i> Create Shipment</a>
-    <a href="/user_management"><i class="fa fa-users"></i> Users</a>
-    <a href="/device-data"><i class="fa fa-microchip"></i> Device Data</a>
-    <button class="logout-btn" onclick="window.location.href='/logout'"><i class="fa fa-sign-out-alt"></i> Logout</button>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fas fa-cubes"></i> <span>SCMXpertLite</span></h2>
+    </div>
+    <div class="sidebar-nav">
+      <a href="/create-shipment"><i class="fas fa-plus-circle"></i> <span>Create Shipment</span></a>
+      <a href="/device-data"><i class="fas fa-microchip"></i> <span>Device Data</span></a>
+      {% if user_role == "admin" %}
+      <a href="/admin-dashboard"><i class="fas fa-user-shield"></i> <span>Admin Dashboard</span></a>
+      {% endif %}
+      <a class="logout-btn" href="/logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+    </div>
   </div>
-</div>
-<div class="container">
-  <div class="edit-shipment-wrapper">
-    <h2><i class="fa fa-edit"></i> Edit Shipments</h2>
-    <input type="text" id="searchInput" placeholder="Search shipments...">
-    <table id="shipmentTable">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">Shipment ID</th>
-          <th onclick="sortTable(1)">PO Number</th>
-          <th onclick="sortTable(2)">Route</th>
-          <th onclick="sortTable(3)">Device</th>
-          <th onclick="sortTable(4)">Goods Type</th>
-          <th onclick="sortTable(5)">Delivery Date</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody id="shipmentTableBody">
-        {% for shipment in shipments %}
-        <tr>
-          <td>{{ shipment.shipment_id }}</td>
-          <td>{{ shipment.po_number }}</td>
-          <td>{{ shipment.route_details }}</td>
-          <td>{{ shipment.device }}</td>
-          <td>{{ shipment.goods_type }}</td>
-          <td>{{ shipment.expected_delivery_date }}</td>
-          <td class="action-buttons">
-            <a href="#" class="edit" onclick="openModal('{{ shipment.shipment_id }}')"><i class="fa fa-edit"></i> Edit</a>
-            <a href="/delete-shipment/{{ shipment.shipment_id }}" class="delete" onclick="return confirm('Are you sure you want to delete this shipment?');"><i class="fa fa-trash"></i> Delete</a>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header">
+      <h1><i class="fas fa-edit"></i> Edit Shipments</h1>
+      <div class="user-info">
+        <span>Welcome, {{ user_email }}</span>
+      </div>
+    </div>
+
+    <!-- Success/Error Messages -->
+    {% if flash %}
+    <div class="alert alert-success">
+      <i class="fas fa-check-circle"></i>
+      <div>{{ flash }}</div>
+    </div>
+    {% endif %}
+
+    <!-- Shipments List -->
+    <div class="content-card">
+      <h2 class="section-title"><i class="fas fa-list"></i> Shipment List</h2>
+      
+      <div class="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Shipment ID</th>
+              <th>Device</th>
+              <th>PO Number</th>
+              <th>Status</th>
+              <th>Created At</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if shipments %}
+              {% for shipment in shipments %}
+              <tr>
+                <td>{{ shipment.shipment_id }}</td>
+                <td>{{ shipment.device }}</td>
+                <td>{{ shipment.po_number }}</td>
+                <td>
+                  <span>{{ shipment.status }}</span>
+                </td>
+                <td>{{ shipment.created_at }}</td>
+                <td class="actions">
+                  <a href="/edit-shipment/{{ shipment.shipment_id }}" class="btn btn-primary">
+                    <i class="fas fa-edit"></i> Edit
+                  </a>
+                  <a href="/delete-shipment/{{ shipment.shipment_id }}" class="btn btn-danger" 
+                     onclick="return confirm('Are you sure you want to delete this shipment?')">
+                    <i class="fas fa-trash"></i> Delete
+                  </a>
+                </td>
+              </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td colspan="6" class="text-center">No shipments found.</td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
-</div>
-<!-- Modal -->
-<div id="editModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2><i class="fa fa-edit"></i> Edit Shipment</h2>
-    <form id="editForm" method="post">
-      <input type="hidden" name="shipment_id" id="modal_shipment_id">
-      <label>PO Number</label>
-      <input type="text" name="po_number" required>
-      <label>Route Details</label>
-      <select name="route_details" required>
-        <option value="Delhi - Mumbai">Delhi - Mumbai</option>
-        <option value="Hyderabad - Bangalore">Hyderabad - Bangalore</option>
-        <option value="Chennai - Pune">Chennai - Pune</option>
-      </select>
-      <label>Device</label>
-      <select name="device" required>
-        <option value="Sensor A">Sensor A</option>
-        <option value="Sensor B">Sensor B</option>
-        <option value="Sensor C">Sensor C</option>
-      </select>
-      <label>NDC Number</label>
-      <input type="text" name="ndc_number" required>
-      <label>Serial Number</label>
-      <input type="text" name="serial_number" required>
-      <label>Container Number</label>
-      <input type="text" name="container_number" required>
-      <label>Goods Type</label>
-      <select name="goods_type" required>
-        <option value="Pharma">Pharma</option>
-        <option value="Food">Food</option>
-        <option value="Electronics">Electronics</option>
-      </select>
-      <label>Expected Delivery Date</label>
-      <input type="date" name="expected_delivery_date" required>
-      <label>Delivery Number</label>
-      <input type="text" name="delivery_number" required>
-      <label>Batch ID</label>
-      <input type="text" name="batch_id" required>
-      <label>Origin</label>
-      <input type="text" name="origin" required>
-      <label>Destination</label>
-      <input type="text" name="destination" required>
-      <label>Status</label>
-      <select name="status" required>
-        <option value="Created">Created</option>
-        <option value="In Transit">In Transit</option>
-        <option value="Delivered">Delivered</option>
-      </select>
-      <label>Shipment Description</label>
-      <textarea name="shipment_description" required></textarea>
-      <button type="submit"><i class="fa fa-save"></i> Update Shipment</button>
-    </form>
-  </div>
-</div>
-<script>
-function sortTable(n) {
-  var table = document.getElementById("shipmentTable"), switching = true, dir = "asc", switchcount = 0;
-  while (switching) {
-    switching = false;
-    var rows = table.rows;
-    for (var i = 1; i < (rows.length - 1); i++) {
-      var x = rows[i].getElementsByTagName("TD")[n], y = rows[i + 1].getElementsByTagName("TD")[n], shouldSwitch = false;
-      if (dir === "asc" ? x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase() : x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-        shouldSwitch = true; break;
-      }
-    }
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true; switchcount++;
-    } else if (switchcount === 0 && dir === "asc") {
-      dir = "desc"; switching = true;
-    }
-  }
-}
-document.getElementById("searchInput").addEventListener("keyup", function() {
-  var input = this.value.toLowerCase(), rows = document.querySelectorAll("#shipmentTableBody tr");
-  rows.forEach(function(row) {
-    row.style.display = row.textContent.toLowerCase().includes(input) ? "" : "none";
-  });
-});
-function openModal(shipmentId) {
-  document.getElementById("editModal").style.display = "block";
-  document.getElementById("modal_shipment_id").value = shipmentId;
-}
-function closeModal() {
-  document.getElementById("editModal").style.display = "none";
-}
-</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

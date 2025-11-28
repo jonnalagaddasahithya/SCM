@@ -12,14 +12,25 @@ from app.config import SECRET_KEY, logger
 # Import APIRouter instances directly from each route file
 # Make sure all these imports are present and correct:
 from app.routes.auth_routes import router as auth_router
-from app.routes.user_routes import router as user_router # <--- CRITICAL for dashboard routes
+from app.routes.user_routes import router as user_router
 from app.routes.shipment_routes import router as shipment_router
 from app.routes.device_data_routes import router as device_data_router
+
+# Import middlewares
+from app.middleware.ip_filter_middleware import IPFilterMiddleware
+from app.middleware.rate_limit_middleware import RateLimitMiddleware
 
 logger.info("Starting FastAPI application setup in main.py")
 
 # Initialize FastAPI app
 app = FastAPI()
+
+# --- Security Middlewares ---
+# Add IP Filter Middleware (configuration loaded from security_config.py)
+app.add_middleware(IPFilterMiddleware)
+
+# Add Rate Limiting Middleware (configuration loaded from security_config.py)
+app.add_middleware(RateLimitMiddleware)
 
 # --- Static files setup ---
 # Mount the 'static' directory to serve static files (CSS, JS, images)
@@ -63,4 +74,3 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
     return JSONResponse({"detail": exc.errors()}, status_code=status.HTTP_400_BAD_REQUEST)
 
 logger.info("FastAPI application setup complete.")
-

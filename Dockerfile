@@ -13,14 +13,11 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code and static/template files
-COPY app.py .
-COPY .env . 
-COPY templates/ templates/
-COPY static/ static/
+COPY . .
 
 # Expose the application port
 EXPOSE 8000
 
 # Command to run the FastAPI application using Uvicorn
 # --host 0.0.0.0 makes the server accessible from outside the container
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

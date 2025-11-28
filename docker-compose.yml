@@ -20,7 +20,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.producer
-    container_name: producer-1
+    container_name: producer
     depends_on:
       kafka:
         condition: service_healthy
@@ -36,7 +36,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.consumer
-    container_name: consumer-1
+    container_name: consumer
     depends_on:
       kafka:
         condition: service_healthy
@@ -48,7 +48,7 @@ services:
 
   kafka:
     image: bitnami/kafka:latest
-    container_name: kafka-1
+    container_name: kafka
     ports:
       - "9092:9092"
     environment:

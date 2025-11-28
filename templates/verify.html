@@ -1,88 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SCMXpertLite - Verify 2FA</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-image: url('https://production-prod-trueprofile-blogassets-origin.s3.ap-southeast-1.amazonaws.com/uploads/2021/09/shutterstock_1335264878-1024x568.jpg'); /* Background image URL */
-      background-size: cover;
-      background-position: center;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1976d2;
+            --primary-dark: #1565c0;
+            --primary-light: #bbdefb;
+            --secondary: #42a5f5;
+            --accent: #29b6f6;
+            --light: #ffffff;
+            --dark: #212121;
+            --gray: #757575;
+            --light-gray: #e0e0e0;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+            --shadow: 0 8px 20px rgba(25, 118, 210, 0.15);
+            --shadow-hover: 0 12px 24px rgba(25, 118, 210, 0.25);
+        }
 
-    .container {
-      background: rgba(44, 44, 44, 0.8); /* Semi-transparent background */
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      width: 300px;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    h2 {
-      color: #4caf50;
-      margin-bottom: 20px;
-    }
+        .verify-container {
+            background: var(--light);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
 
-    p {
-      margin-bottom: 20px;
-      font-size: 1rem;
-    }
+        .header {
+            color: var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-light);
+        }
 
-    .flash {
-      background: #ff5722;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
+        .header i {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            margin: 0 auto 15px;
+        }
 
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      font-size: 1rem;
-      text-align: center;
-    }
+        .verification-code {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 5px;
+            background: var(--primary-light);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 30px 0;
+            font-family: 'Courier New', monospace;
+        }
 
-    button {
-      background: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
+        .btn {
+            padding: 12px 25px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
 
-    button:hover {
-      background: #45a049;
-    }
-  </style>
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--light);
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .instructions {
+            background: var(--primary-light);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 10px;
+        }
+
+        .alert {
+            border-radius: var(--border-radius);
+            padding: 15px 20px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .alert-success {
+            background: rgba(76, 175, 80, 0.15);
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            color: #2e7d32;
+        }
+
+        .alert-danger {
+            background: rgba(244, 67, 54, 0.15);
+            border: 1px solid rgba(244, 67, 54, 0.3);
+            color: #c62828;
+        }
+
+        .alert i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .verify-container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            .header {
+                font-size: 1.5rem;
+            }
+            
+            .header i {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .verification-code {
+                font-size: 2rem;
+                letter-spacing: 3px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h2><i class="fa fa-lock"></i> 2FA Verification</h2>
-    <p>Please enter the 6-digit code from your authenticator app.</p>
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-        <div class="flash">{{ messages[0] }}</div>
-      {% endif %}
-    {% endwith %}
-    <form method="POST">
-      <input type="text" name="token" maxlength="6" pattern="\d{6}" placeholder="Enter 2FA code" required autocomplete="one-time-code">
-      <button type="submit"><i class="fa fa-check"></i> Verify</button>
-    </form>
-  </div>
+    <div class="verify-container">
+        <div class="header">
+            <i class="fas fa-envelope"></i>
+            <h2>Email Verification</h2>
+        </div>
+        
+        {% if flash %}
+        <div class="alert alert-success">
+            <i class="fas fa-info-circle"></i>
+            <div>{{ flash }}</div>
+        </div>
+        {% endif %}
+        
+        <p>Please use the following 6-digit verification code to complete your registration:</p>
+        
+        <div class="verification-code">{{ verification_code }}</div>
+        
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <ol>
+                <li>Copy the 6-digit verification code above</li>
+                <li>Click the button below to return to the application</li>
+                <li>Enter the code when prompted</li>
+                <li>Complete your registration process</li>
+            </ol>
+        </div>
+        
+        <a href="/verify-code" class="btn btn-primary" target="_self">
+            <i class="fas fa-arrow-right"></i> OK, Return to Application
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
