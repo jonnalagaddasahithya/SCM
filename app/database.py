@@ -13,7 +13,7 @@ device_data_collection = None
 admin_requests_collection = None  # Added back admin_requests_collection
 audit_log_collection = None  # Added back audit_log_collection
 
-def initialize_db():
+def initialize_db():                            
     """
     Initializes the MongoDB connection and collections.
     This function should be called once at application startup.
