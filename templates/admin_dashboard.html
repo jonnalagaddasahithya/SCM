@@ -7,14 +7,34 @@
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body, html {
+    :root {
+      --primary: #2196f3;
+      --primary-dark: #0d47a1;
+      --primary-light: #e3f2fd;
+      --secondary: #42a5f5;
+      --accent: #29b6f6;
+      --light: #ffffff;
+      --dark: #343a40;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+      --shadow: 0 8px 20px rgba(33, 150, 243, 0.15);
+      --shadow-hover: 0 12px 25px rgba(33, 150, 243, 0.25);
+    }
+    
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJhY2tncm91bmR8ZW58MHx8fHwxNjg0MjY0NzY0&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center fixed;
-      background-size: cover;
+      box-sizing: border-box;
+    }
+    
+    body, html {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: var(--light);
       min-height: 100vh;
-      color: #fdf8f8; /* light text color for better contrast */
+      line-height: 1.6;
+      color: var(--dark);
     }
 
     .dashboard-container {
@@ -24,170 +44,175 @@
 
     .sidebar {
       width: 250px;
-      background: rgba(20, 20, 30, 0.8);
+      background: var(--light);
       padding: 20px;
-      color: #f6efef;
-      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+      color: var(--dark);
+      box-shadow: 3px 0 15px rgba(0, 0, 0, 0.08);
+      border-right: 1px solid var(--light-gray);
     }
 
     .sidebar h2 {
       font-size: 1.5rem;
       margin-bottom: 20px;
+      color: var(--primary);
+      font-weight: 700;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--light-gray);
     }
 
     .sidebar a {
-      display: block;
-      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--dark);
       text-decoration: none;
-      padding: 10px;
-      border-radius: 5px;
-      transition: background 0.3s;
+      padding: 12px 15px;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      margin-bottom: 8px;
+      font-weight: 500;
     }
 
     .sidebar a:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
+    .sidebar a.logout-btn {
+      background: var(--primary);
+      color: white !important;
+      font-weight: 600;
+      margin-top: 20px;
+      box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+    }
+
+    .sidebar a.logout-btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
     }
 
     .main-content {
       flex: 1;
-      padding: 44px 6vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #ffffff;
-      background: rgba(34, 40, 49, 0.65);
-      backdrop-filter: blur(6px);
+      padding: 30px;
+      background: var(--light);
     }
 
     .topbar {
-      background: rgba(20, 20, 30, 0.6);
-      padding: 22px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .brand {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 18px rgba(0,0,0,0.3);
-      border-bottom: 1.5px solid rgba(255,255,255,0.1);
-      width: 100%;
+      gap: 15px;
     }
 
     .brand h1 {
       font-size: 2rem;
-      font-weight: 700;
-      color: #ffffff;
       margin: 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      color: var(--primary);
+      font-weight: 800;
     }
 
-    .brand h1 i {
-      color: #ffd700;
-    }
-
-    .nav-menu {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav-menu a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #f3f3f3;
-      padding: 10px 16px;
-      border-radius: 8px;
-      transition: background 0.3s, color 0.3s;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .nav-menu a:hover {
-      background: rgba(255,255,255,0.08);
-      color: #ffd700;
-    }
-
-    .nav-menu .logout-btn {
-      background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
-      color: #fff !important;
-      font-weight: 600;
-      border: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
-
-    .nav-menu .logout-btn:hover {
-      background: linear-gradient(90deg, #c31432 0%, #240b36 100%);
-      transform: scale(1.05);
+    .brand i {
+      color: var(--primary);
+      font-size: 1.8rem;
     }
 
     .main-content h2 {
       font-size: 2rem;
       margin-bottom: 32px;
-      font-weight: 600;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+      font-weight: 700;
+      color: var(--dark);
     }
 
     .panel-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 36px;
+      gap: 30px;
       justify-content: center;
       width: 100%;
       max-width: 1100px;
     }
 
     .panel {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 20px;
-      width: 260px;
+      background: var(--light);
+      border-radius: var(--border-radius);
+      width: 280px;
       height: 240px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border: 1px solid var(--light-gray);
     }
 
     .panel:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
     }
 
     .panel i {
       font-size: 2.5rem;
-      color: #ffd700;
+      color: var(--primary);
       margin-bottom: 18px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      padding: 20px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .panel h3 {
       font-size: 1.3rem;
-      color: #fdfdfd;
+      color: var(--dark);
       margin-bottom: 16px;
+      font-weight: 700;
     }
 
     .panel .btn {
-      background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
-      color: #000;
-      font-weight: bold;
-      padding: 10px 20px;
+      background: var(--primary);
+      color: white;
+      font-weight: 600;
+      padding: 12px 24px;
       border: none;
-      border-radius: 8px;
+      border-radius: var(--border-radius);
       text-decoration: none;
-      transition: all 0.2s ease-in-out;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
     }
 
     .panel .btn:hover {
-      background: linear-gradient(90deg, #c33764 0%, #1d2671 100%);
-      color: #fff;
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
     }
 
     @media (max-width: 768px) {
       .panel {
         width: 90%;
+      }
+      
+      .dashboard-container {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--light-gray);
       }
     }
   </style>
@@ -201,6 +226,17 @@
       <a href="/edit-shipment"><i class="fa fa-edit"></i> Edit Shipment</a>
       <a href="/user_management"><i class="fa fa-user-cog"></i> Users</a>
       <a href="/device-data"><i class="fa fa-chart-line"></i> Device Data</a>
+      <!-- Admin Requests Notification -->
+      <a href="/admin-requests" style="position: relative;">
+        <i class="fa fa-user-shield"></i> Admin Requests
+        {% if pending_requests_count and pending_requests_count > 0 %}
+        <span style="position: absolute; top: 5px; right: 10px; background: #f44336; color: white; border-radius: 50%; 
+              width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; 
+              font-size: 12px; font-weight: bold;">
+          {{ pending_requests_count }}
+        </span>
+        {% endif %}
+      </a>
       <a class="logout-btn" href="/logout"><i class="fa fa-sign-out-alt"></i> Logout</a>
     </div>
 

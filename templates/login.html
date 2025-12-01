@@ -5,255 +5,360 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SCMXpertLite - Login</title>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- reCAPTCHA API -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
   <style>
+    :root {
+      --primary: #2196f3;
+      --primary-dark: #0d47a1;
+      --primary-light: #e3f2fd;
+      --secondary: #42a5f5;
+      --accent: #29b6f6;
+      --light: #ffffff;
+      --dark: #212121;
+      --gray: #757575;
+      --light-gray: #e0e0e0;
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+      --shadow: 0 10px 25px rgba(33, 150, 243, 0.2);
+      --shadow-hover: 0 15px 30px rgba(33, 150, 243, 0.3);
+    }
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    
     body {
-      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: var(--light);
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(145deg, #f0e5f0, #e0f7fa);
-      animation: backgroundShift 10s ease infinite alternate;
+      padding: 15px;
+      line-height: 1.5;
     }
-
-    @keyframes backgroundShift {
-      0% {
-        background: linear-gradient(145deg, #f0e5f0, #e0f7fa);
-      }
-      100% {
-        background: linear-gradient(145deg, #e0ffe8, #f9f9ff);
-      }
+    
+    .auth-wrapper {
+      width: 100%;
+      max-width: 400px;
     }
-
-    .login-container {
-      width: 90%;
-      max-width: 900px;
-      display: flex;
-      background: #ffffffee;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      animation: fadeIn 1s ease-out forwards;
-      flex-direction: column; /* Change to column layout */
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .left-panel {
-      background: linear-gradient(135deg, #f9c2c2, #f9e6c2);
-      color: #4a4a4a;
+    
+    .logo-header {
       text-align: center;
-      padding: 40px;
+      margin-bottom: 20px;
     }
-
-    .left-panel h3 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    
+    .logo-header h1 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: -0.3px;
     }
-
-    .left-panel p {
+    
+    .logo-header p {
+      color: var(--gray);
       font-size: 1rem;
+      margin-top: 8px;
+      font-weight: 300;
+    }
+    
+    .auth-card {
+      background: var(--light);
+      border-radius: var(--border-radius);
+      padding: 35px 30px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--light-gray);
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    
+    .auth-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+    
+    .auth-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--primary);
+    }
+    
+    .auth-header {
+      text-align: center;
       margin-bottom: 25px;
     }
-
-    .alt-button {
-      background: #ffffff;
-      color: #3973ac;
-      border: none;
-      padding: 12px 30px;
-      font-size: 1rem;
-      border-radius: 25px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.3s;
+    
+    .auth-header h2 {
+      font-size: 1.8rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
     }
-
-    .alt-button:hover {
-      background: #f0f8ff;
-      transform: scale(1.05);
-    }
-
-    .right-panel {
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .right-panel h2 {
-      font-size: 2rem;
-      color: #2c3e50;
-      margin-bottom: 5px;
-    }
-
-    .right-panel p {
-      color: #555;
-      margin-bottom: 20px;
+    
+    .auth-header p {
+      color: var(--gray);
       font-size: 0.95rem;
+      font-weight: 300;
     }
-
-    form {
-      width: 100%;
-      max-width: 380px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .input-group {
+    
+    .form-group {
+      margin-bottom: 20px;
       position: relative;
     }
-
-    .input-group i {
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 0.95rem;
+    }
+    
+    .input-wrapper {
+      position: relative;
+    }
+    
+    .input-wrapper i {
       position: absolute;
-      left: 14px;
+      left: 15px;
       top: 50%;
       transform: translateY(-50%);
-      color: #76b9ed;
+      color: var(--gray);
+      font-size: 1rem;
+      transition: var(--transition);
     }
-
-    .input-group input {
+    
+    .form-control {
       width: 100%;
-      padding: 12px 12px 12px 40px;
-      border: 1.5px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      background: #f7fafd;
-      transition: border-color 0.3s ease;
-    }
-
-    .input-group input:focus {
-      border-color: #76b9ed;
-      outline: none;
-    }
-
-    label {
-      font-weight: 500;
-      font-size: 0.95rem;
-      color: #222;
-      margin-left: 4px;
-    }
-
-    .g-recaptcha {
-      margin-top: 10px;
-    }
-
-    button[type="submit"] {
-      background: linear-gradient(90deg, #76b9ed, #b2fefa);
-      color: white;
-      border: none;
-      padding: 13px;
-      border-radius: 25px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    button[type="submit"]:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    .flash {
-      background: #7fb3d5;
-      color: white;
-      padding: 10px;
-      text-align: center;
+      padding: 14px 14px 14px 40px;
+      border: 2px solid var(--light-gray);
       border-radius: 10px;
-      margin-bottom: 10px;
-      font-weight: bold;
+      font-size: 1rem;
+      transition: var(--transition);
+      background: var(--light);
+      color: var(--dark);
+      box-shadow: 0 3px 10px rgba(33, 150, 243, 0.05);
     }
-
-    a {
-      text-decoration: none;
-      color: #3973ac;
-      font-size: 0.9rem;
-      transition: color 0.2s;
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
     }
-
-    a:hover {
-      color: #2c3e50;
+    
+    .form-control:focus + i {
+      color: var(--primary);
     }
-
-    #error-message {
-      color: red;
-      font-size: 0.9rem;
-      margin-top: 10px;
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
       text-align: center;
+      text-decoration: none;
+      letter-spacing: 0.3px;
     }
-
+    
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 7px 20px rgba(33, 150, 243, 0.3);
+    }
+    
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(33, 150, 243, 0.4);
+    }
+    
+    .auth-footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .auth-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+    
+    .auth-footer a:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+    
+    .flash {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 3px 10px rgba(33, 150, 243, 0.1);
+      font-size: 0.95rem;
+    }
+    
+    #error-message {
+      color: #d32f2f;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      text-align: center;
+      font-weight: 500;
+      padding: 12px;
+      background: rgba(211, 47, 47, 0.1);
+      border-radius: 8px;
+    }
+    
+    /* reCAPTCHA styling */
+    .g-recaptcha {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    
     @media (max-width: 768px) {
-      .login-container {
-        flex-direction: column;
+      body {
+        padding: 10px;
+      }
+      
+      .auth-card {
+        padding: 30px 25px;
+        border-radius: 10px;
+      }
+      
+      .auth-header h2 {
+        font-size: 1.6rem;
+      }
+      
+      .logo-header h1 {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .auth-card {
+        padding: 25px 20px;
+      }
+      
+      .form-control {
+        padding: 12px 12px 12px 35px;
+        font-size: 0.95rem;
+      }
+      
+      .btn {
+        padding: 12px;
+        font-size: 0.95rem;
       }
     }
   </style>
 </head>
 
 <body>
-  <div class="login-container">
-    <!-- New Here Section -->
-    <div class="left-panel">
-      <h3>New Here?</h3>
-      <p>Create your account to get started with SCMXpertLite.</p>
-      <a href="{{ url_for('signup') }}">
-        <button class="alt-button">SIGN UP</button>
-      </a>
+  <div class="auth-wrapper">
+    <div class="logo-header">
+      <h1>SCMXpertLite</h1>
+      <p>Supply Chain Management Solution</p>
     </div>
-
-    <!-- Right Side -->
-    <div class="right-panel">
-      <h2>SCMXPERTLITE</h2>
-      <h2>Login</h2>
-      <p>Enter your credentials to access your dashboard.</p>
+      
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Welcome Back</h2>
+        <p>Sign in to your account</p>
+      </div>
 
       {% if flash %}
         <div class="flash">{{ flash }}</div>
       {% endif %}
+      
+      {% if error %}
+        <div class="flash" style="background-color: #ffebee; color: #c62828; border-left-color: #f44336;">
+          <i class="fa fa-exclamation-circle"></i> {{ error }}
+        </div>
+      {% endif %}
 
-      <form method="POST">
-        <label for="username">Email Address</label>
-        <div class="input-group">
-          <i class="fa fa-envelope"></i>
-          <input type="email" id="username" name="username" placeholder="Email Address" required>
+      <form method="POST" id="loginForm">
+        <div class="form-group">
+          <label for="username">Email Address</label>
+          <div class="input-wrapper">
+            <i class="fa fa-envelope"></i>
+            <input type="email" id="username" name="username" class="form-control" placeholder="Enter your email" required>
+          </div>
         </div>
 
-        <label for="password">Password</label>
-        <div class="input-group">
-          <i class="fa fa-lock"></i>
-          <input type="password" id="password" name="password" placeholder="Password" required>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+          </div>
         </div>
 
+        <!-- reCAPTCHA widget -->
         <div class="g-recaptcha" data-sitekey="{{ site_key }}"></div>
-        <button type="submit">Login</button>
+        
+        <!-- Hidden input for reCAPTCHA response -->
+        <input type="hidden" name="recaptcha_response" id="recaptcha_response">
+        
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        
+        <!-- Google SSO Button -->
+        <div class="text-center mt-3">
+          <p class="mb-2">Or sign in with:</p>
+          <a href="/login/google" class="btn btn-outline-dark d-inline-flex align-items-center justify-content-center" style="text-transform: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google logo" width="20" height="20" class="me-2" onerror="this.style.display='none'">
+            <span>Sign in with Google</span>
+          </a>
+        </div>
       </form>
 
-      <p style="margin-top: 15px;">
-        <a href="/forgot-password">Forgot Password?</a>
-      </p>
-      <div id="error-message"></div>
+      <div class="auth-footer">
+        <a href="/forgot-password">Forgot your password?</a>
+        <div style="margin-top: 15px;">
+          <a href="{{ url_for('signup') }}">Don't have an account? Sign up</a>
+        </div>
+      </div>
     </div>
   </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Handle form submission with reCAPTCHA
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      // Check if reCAPTCHA is completed
+      var recaptchaResponse = grecaptcha.getResponse();
+      
+      // If reCAPTCHA is not completed, show an error
+      if (recaptchaResponse.length === 0) {
+        event.preventDefault();
+        alert('Please complete the reCAPTCHA verification');
+        return;
+      }
+      
+      // Set the reCAPTCHA response in the hidden input field
+      document.getElementById('recaptcha_response').value = recaptchaResponse;
+    });
+  </script>
 </body>
 
 </html>

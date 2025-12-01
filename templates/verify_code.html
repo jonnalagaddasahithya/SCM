@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forgot Password</title>
+    <title>Verify Code</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- reCAPTCHA API -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style>
         :root {
             --primary: #1976d2;
@@ -38,7 +36,7 @@
             align-items: center;
         }
 
-        .forgot-password-container {
+        .verify-code-container {
             background: var(--light);
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
@@ -90,6 +88,10 @@
             padding: 12px 15px;
             font-size: 1rem;
             transition: var(--transition);
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
         }
 
         .form-control:focus {
@@ -124,20 +126,6 @@
             box-shadow: var(--shadow-hover);
         }
 
-        .btn-secondary {
-            background: var(--light-gray);
-            color: var(--dark);
-            text-decoration: none;
-            display: inline-flex;
-            justify-content: center;
-        }
-
-        .btn-secondary:hover {
-            background: #d5d5d5;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
         .alert {
             border-radius: var(--border-radius);
             padding: 15px 20px;
@@ -163,33 +151,27 @@
             font-size: 1.2rem;
         }
 
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
+        .instructions {
+            background: var(--primary-light);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin: 25px 0;
         }
 
-        .back-link a {
+        .instructions h3 {
             color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .back-link a:hover {
-            text-decoration: underline;
-        }
-
-        /* reCAPTCHA styling */
-        .g-recaptcha {
-            margin: 20px 0;
+            margin-bottom: 15px;
             display: flex;
-            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .instructions p {
+            margin-bottom: 0;
         }
 
         @media (max-width: 768px) {
-            .forgot-password-container {
+            .verify-code-container {
                 margin: 20px;
                 padding: 30px 20px;
             }
@@ -202,40 +184,67 @@
                 width: 50px;
                 height: 50px;
             }
+            
+            .form-control {
+                font-size: 1.2rem;
+                letter-spacing: 3px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="forgot-password-container">
+    <div class="verify-code-container">
         <div class="header">
             <i class="fas fa-key"></i>
-            <h2>Forgot Password</h2>
+            <h2>Verify Your Email</h2>
         </div>
         
         {% if flash %}
-        <div class="alert alert-success">
-            <i class="fas fa-info-circle"></i>
+        <div class="alert alert-danger">
+            <i class="fas fa-exclamation-circle"></i>
             <div>{{ flash }}</div>
         </div>
         {% endif %}
         
-        <form method="POST" action="/forgot-password" id="forgotPasswordForm">
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> Instructions</h3>
+            <p>Enter the 6-digit verification code that was sent to your email address to complete your registration.</p>
+        </div>
+        
+        <form method="POST" action="/verify-code">
             <div class="form-group">
-                <label class="form-label"><i class="fas fa-envelope"></i> Email Address</label>
-                <input type="email" class="form-control" name="email" placeholder="Enter your email address" required>
+                <label class="form-label"><i class="fas fa-key"></i> Verification Code</label>
+                <input type="text" class="form-control" name="verification_code" placeholder="Enter 6-digit code" maxlength="6" required>
             </div>
             
             <button type="submit" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> Send Reset Instructions
+                <i class="fas fa-check"></i> Verify Code
             </button>
         </form>
-        
-        <div class="back-link">
-            <a href="/login"><i class="fas fa-arrow-left"></i> Back to Login</a>
-        </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Auto-focus and auto-advance for verification code input
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeInput = document.querySelector('input[name="verification_code"]');
+            if (codeInput) {
+                codeInput.focus();
+                
+                codeInput.addEventListener('input', function() {
+                    // Convert to uppercase
+                    this.value = this.value.toUpperCase();
+                    
+                    // Auto-submit when 6 characters are entered
+                    if (this.value.length === 6) {
+                        // Optional: auto-submit the form
+                        // this.form.submit();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>

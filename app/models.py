@@ -8,7 +8,7 @@ class Token(BaseModel):
     token_type: str
 
 # Pydantic model for data contained within a JWT token
-class TokenData(BaseModel): # <--- THIS CLASS DEFINITION IS CRUCIAL
+class TokenData(BaseModel): 
     username: Optional[str] = None
     role: Optional[str] = None
 
@@ -28,4 +28,4 @@ class ShipmentCreateData(BaseModel):
     origin: str
     destination: str
     shipment_description: str
-
+    status: str = "Created"  # Add default status field

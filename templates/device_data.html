@@ -5,95 +5,290 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Device Data</title>
     <meta http-equiv="refresh" content="15">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        :root {
+            --primary: #2196f3;
+            --primary-dark: #0d47a1;
+            --primary-light: #e3f2fd;
+            --secondary: #42a5f5;
+            --accent: #29b6f6;
+            --light: #ffffff;
+            --dark: #212121;
+            --gray: #757575;
+            --light-gray: #e0e0e0;
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+            --shadow: 0 10px 25px rgba(33, 150, 243, 0.2);
+            --shadow-hover: 0 15px 30px rgba(33, 150, 243, 0.3);
+        }
+        
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: var(--light);
             min-height: 100vh;
-            background: url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
-            background-size: cover;
-            backdrop-filter: blur(3px);
-            color: #333; /* Default text color */
+            line-height: 1.6;
+            color: var(--dark);
         }
+        
+        .topbar {
+            background: var(--light);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid var(--light-gray);
+            padding: 15px 0;
+        }
+
+        .brand h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            margin: 0;
+        }
+
+        .brand i {
+            color: var(--primary);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: var(--transition);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            border-radius: var(--border-radius);
+            background: var(--light);
+            border: 1px solid var(--light-gray);
+            box-shadow: 0 3px 8px rgba(33, 150, 243, 0.05);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+
+        .nav-menu a:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 5px 12px rgba(33, 150, 243, 0.1);
+        }
+
+        .logout-btn {
+            background: var(--primary);
+            color: var(--light) !important;
+            font-weight: 600;
+            border: none;
+            transition: var(--transition);
+            padding: 10px 16px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+            font-size: 0.9rem;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .logout-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 7px 20px rgba(33, 150, 243, 0.4);
+        }
+        
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
-            background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for readability */
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background: var(--light);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
             padding: 32px 24px;
+            border: 1px solid var(--light-gray);
         }
+        
         h1 {
             text-align: center;
-            color: #6c757d; /* Light gray color for header */
+            color: var(--dark);
             margin-bottom: 24px;
             font-weight: 700;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
         }
+        
+        h1 i {
+            color: var(--primary);
+        }
+        
         .device-form {
             margin-bottom: 24px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
+        
         .device-form select {
-            padding: 10px 14px;
-            font-size: 16px;
-            border-radius: 8px;
-            border: 1.5px solid #6c757d; /* Light gray border */
-            margin-right: 10px;
-            background: #f8f9fa; /* Light background for select */
-            color: #333;
+            width: 100%;
+            padding: 14px;
+            font-size: 1rem;
+            border: 2px solid var(--light-gray);
+            border-radius: 10px;
+            background: var(--light);
+            color: var(--dark);
+            box-shadow: 0 3px 10px rgba(33, 150, 243, 0.05);
+            min-width: 200px;
+            transition: var(--transition);
         }
-        .device-form button {
-            padding: 10px 22px;
-            font-size: 16px;
-            cursor: pointer;
-            background: #6c757d; /* Light gray button */
-            color: white;
+        
+        .device-form select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+        }
+        
+        .btn {
+            display: block;
+            padding: 14px 25px;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-size: 1rem;
             font-weight: 600;
-            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .device-form button:hover {
-            background: #5a6268; /* Darker gray on hover */
-            transform: translateY(-2px) scale(1.03);
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 7px 20px rgba(33, 150, 243, 0.3);
         }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(33, 150, 243, 0.4);
+        }
+        
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background: #ffffff;
-            border-radius: 12px;
+            background: var(--light);
+            border-radius: var(--border-radius);
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px rgba(33, 150, 243, 0.1);
+            border: 1px solid var(--light-gray);
         }
+        
         th, td {
-            padding: 14px;
+            padding: 16px;
             text-align: left;
         }
+        
         th {
-            background: #6c757d; /* Light gray header background */
-            color: white;
+            background: var(--primary);
+            color: var(--light);
             font-weight: 600;
             font-size: 1rem;
         }
+        
         tr:nth-child(even) {
-            background-color: #f2f2f2; /* Light gray for even rows */
+            background-color: var(--primary-light);
         }
+        
         tr:hover {
-            background-color: #e9ecef; /* Slightly darker gray on hover */
+            background-color: #e3f2fd;
         }
+        
         td {
-            color: #333;
+            color: var(--dark);
         }
-        @media (max-width: 700px) {
-            .container { padding: 10px 2vw; }
-            table, th, td { font-size: 0.98rem; }
+        
+        @media (max-width: 768px) {
+            .container { 
+                padding: 20px; 
+                margin: 20px;
+            }
+            
+            .device-form {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .device-form select, .device-form button {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            table, th, td { 
+                font-size: 0.9rem; 
+            }
+            
+            th, td {
+                padding: 12px 10px;
+            }
+            
+            .nav-menu {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .nav-menu a {
+                margin: 5px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Top Navigation Bar -->
+    <div class="topbar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="brand">
+                        <h1><i class="fa fa-microchip"></i> SCMXpertLite</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="nav-menu d-flex flex-column flex-md-row gap-3 justify-content-md-end align-items-md-center">
+                        <a href="/admin-dashboard" class="px-3 py-2 rounded"><i class="fa fa-home"></i> Home</a>
+                        <a href="/create-shipment" class="px-3 py-2 rounded"><i class="fa fa-plus"></i> Create Shipment</a>
+                        <a href="/edit-shipment" class="px-3 py-2 rounded"><i class="fa fa-edit"></i> Edit Shipment</a>
+                        <a href="/user_management" class="px-3 py-2 rounded"><i class="fa fa-users"></i> Users</a>
+                        <button class="logout-btn px-4 py-2 rounded" onclick="window.location.href='/logout'">
+                            <i class="fa fa-sign-out-alt"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container">
         <h1><i class="fa fa-microchip"></i> Device Data</h1>
         <form class="device-form" action="/device-data" method="get">
@@ -105,7 +300,7 @@
                     </option>
                 {% endfor %}
             </select>
-            <button type="submit"><i class="fa fa-filter"></i> Filter</button>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-filter"></i> Filter</button>
         </form>
         <table>
             <thead>
@@ -136,5 +331,8 @@
             </tbody>
         </table>
     </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

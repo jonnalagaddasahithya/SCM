@@ -7,7 +7,7 @@ from app.config import (
     DASHBOARD_ROUTE, ADMIN_DASHBOARD_ROUTE, USER_MANAGEMENT_ROUTE,
     DATETIME_DISPLAY_FORMAT, logger, get_current_utc_time
 )
-from app.database import users_collection
+from app.database import users_collection, admin_requests_collection
 from app.auth import get_current_active_user, verify_admin
 
 # Create an APIRouter instance for user-related routes
@@ -37,12 +37,21 @@ async def get_admin_dashboard(request: Request, current_user: dict = Depends(ver
     Requires an active authenticated admin user.
     """
     logger.info(f"Admin dashboard requested by {current_user['email']}.")
+    
+    # Count pending admin requests
+    pending_requests_count = 0
+    try:
+        pending_requests_count = admin_requests_collection.count_documents({"status": "pending"})
+    except Exception as e:
+        logger.error(f"Error counting pending admin requests: {e}")
+    
     flash = request.session.pop("flash", None) # Retrieve and clear flash messages
     return request.app.state.templates.TemplateResponse(
         "admin_dashboard.html", {
             "request": request,
             "name": current_user["email"],
-            "flash": flash
+            "flash": flash,
+            "pending_requests_count": pending_requests_count
         }
     )
 
@@ -108,6 +117,9 @@ async def update_user(
         request.session["flash"] = "New email already exists for another user."
         return RedirectResponse(url=f"/edit-user/{email}", status_code=status.HTTP_303_SEE_OTHER)
     
+    # Check if admin is changing their own role to user
+    is_self_demotion = (email == current_user["email"] and role == "user")
+    
     # Prepare update data
     update_data = {
         "name": name,
@@ -120,8 +132,16 @@ async def update_user(
     result = users_collection.update_one({"email": email}, {"$set": update_data})
 
     if result.modified_count > 0:
-        request.session["flash"] = "User updated successfully."
-        logger.info(f"User {email} updated to {new_email}.")
+        if is_self_demotion:
+            request.session["flash"] = "You are a user now."
+            logger.info(f"Admin {email} demoted themselves to user.")
+            # Clear the session and redirect to login
+            response = RedirectResponse(url="/login", status_code=status.HTTP_303_SEE_OTHER)
+            response.delete_cookie("access_token")
+            return response
+        else:
+            request.session["flash"] = "User updated successfully."
+            logger.info(f"User {email} updated to {new_email}.")
     else:
         request.session["flash"] = "No changes made or user not found."
         logger.warning(f"No update performed for user {email}.")
@@ -205,6 +225,102 @@ async def account_page(request: Request, current_user: dict = Depends(get_curren
         "account.html", {"request": request, "user": user_data, "flash": flash}
     )
 
+
+@router.get("/request-admin", response_class=HTMLResponse)
+async def request_admin_form(request: Request, current_user: dict = Depends(get_current_active_user)):
+    """
+    Renders the admin access request form.
+    Requires an active authenticated user.
+    """
+    logger.info(f"Admin access request form requested by {current_user['email']}.")
+    
+    # Check if user is already an admin
+    if current_user.get("role") == "admin":
+        request.session["flash"] = "You are already an administrator."
+        return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+    
+    # Check if user already has a pending request
+    existing_request = admin_requests_collection.find_one({
+        "user_email": current_user["email"],
+        "status": "pending"
+    })
+    
+    if existing_request:
+        request.session["flash"] = "You already have a pending admin access request."
+        return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+    
+    # Fetch user data for the form
+    user_data = users_collection.find_one(
+        {"email": current_user["email"]},
+        {"_id": 0, "name": 1, "email": 1}
+    )
+    
+    if not user_data:
+        request.session["flash"] = "User data not found."
+        return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+    
+    flash = request.session.pop("flash", None)
+    return request.app.state.templates.TemplateResponse(
+        "request_admin.html", {"request": request, "user": user_data, "flash": flash}
+    )
+
+
+@router.post("/request-admin", response_class=HTMLResponse)
+async def submit_admin_request(
+    request: Request, 
+    reason: str = Form(None),
+    current_user: dict = Depends(get_current_active_user)
+):
+    """
+    Handles submission of admin access request.
+    Requires an active authenticated user.
+    """
+    logger.info(f"Admin access request submitted by {current_user['email']}.")
+    
+    # Check if user is already an admin
+    if current_user.get("role") == "admin":
+        request.session["flash"] = "You are already an administrator."
+        return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+    
+    # Check if user already has a pending request
+    existing_request = admin_requests_collection.find_one({
+        "user_email": current_user["email"],
+        "status": "pending"
+    })
+    
+    if existing_request:
+        request.session["flash"] = "You already have a pending admin access request."
+        return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+    
+    # Create admin request record
+    admin_request = {
+        "user_name": current_user["name"],
+        "user_email": current_user["email"],
+        "reason": reason or "",
+        "status": "pending",
+        "requested_at": get_current_utc_time(),
+        "processed_at": None,
+        "processed_by": None,
+        "processed_by_name": None,
+        "decision_notes": None
+    }
+    
+    try:
+        # Insert the request into the database
+        result = admin_requests_collection.insert_one(admin_request)
+        if result.inserted_id:
+            request.session["flash"] = "Your admin access request has been submitted successfully. Administrators will review your request."
+            logger.info(f"Admin access request submitted for {current_user['email']}.")
+        else:
+            request.session["flash"] = "Failed to submit your request. Please try again."
+            logger.error(f"Failed to insert admin request for {current_user['email']}.")
+    except Exception as e:
+        request.session["flash"] = "An error occurred while submitting your request. Please try again."
+        logger.error(f"Error submitting admin request for {current_user['email']}: {e}")
+    
+    return RedirectResponse(url="/account", status_code=status.HTTP_302_FOUND)
+
+
 @router.get("/logout")
 async def logout(request: Request):
     """
@@ -215,3 +331,189 @@ async def logout(request: Request):
     response.delete_cookie("access_token") # Delete the access token cookie
     return response
 
+@router.get("/admin-requests", response_class=HTMLResponse)
+async def admin_requests_page(request: Request, current_user: dict = Depends(verify_admin)):
+    """
+    Renders the admin requests page, listing all pending and processed requests.
+    Requires an active authenticated admin user.
+    """
+    logger.info(f"Admin requests page requested by {current_user['email']}.")
+    
+    try:
+        # Fetch all admin requests, sorted by request date (newest first)
+        requests_cursor = admin_requests_collection.find({}).sort("requested_at", -1)
+        admin_requests = []
+        
+        for req in requests_cursor:
+            # Format datetime objects for display
+            if isinstance(req.get("requested_at"), datetime):
+                req["requested_at_str"] = req["requested_at"].strftime(DATETIME_DISPLAY_FORMAT)
+            else:
+                req["requested_at_str"] = str(req.get("requested_at", "N/A"))
+                
+            if isinstance(req.get("processed_at"), datetime):
+                req["processed_at_str"] = req["processed_at"].strftime(DATETIME_DISPLAY_FORMAT)
+            else:
+                req["processed_at_str"] = str(req.get("processed_at", "N/A"))
+            
+            admin_requests.append(req)
+        
+        flash = request.session.pop("flash", None)
+        return request.app.state.templates.TemplateResponse(
+            "admin_requests.html", {
+                "request": request,
+                "admin_requests": admin_requests,
+                "flash": flash
+            }
+        )
+    except Exception as e:
+        logger.error(f"Error fetching admin requests: {e}")
+        request.session["flash"] = "Error loading admin requests."
+        return RedirectResponse(url=ADMIN_DASHBOARD_ROUTE, status_code=status.HTTP_302_FOUND)
+
+@router.post("/admin-requests/{request_id}/approve", response_class=HTMLResponse)
+async def approve_admin_request(request: Request, request_id: str, current_user: dict = Depends(verify_admin)):
+    """
+    Approves an admin access request.
+    Requires an active authenticated admin user.
+    """
+    logger.info(f"Admin request approval attempted by {current_user['email']} for request {request_id}.")
+    
+    try:
+        # Validate ObjectId format
+        from bson import ObjectId
+        try:
+            obj_id = ObjectId(request_id)
+        except Exception:
+            request.session["flash"] = "Invalid request ID."
+            return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+        
+        # Atomically update the request status to approved only if it's still pending
+        update_result = admin_requests_collection.update_one(
+            {"_id": obj_id, "status": "pending"},
+            {
+                "$set": {
+                    "status": "approved",
+                    "processed_at": datetime.utcnow(),
+                    "processed_by": current_user["email"],
+                    "updated_at": datetime.utcnow()
+                }
+            }
+        )
+        
+        # Check if the update was successful (document was found and updated)
+        if update_result.matched_count == 0:
+            # Check if request exists but is already processed
+            admin_request = admin_requests_collection.find_one({"_id": obj_id})
+            if admin_request and admin_request.get("status") != "pending":
+                request.session["flash"] = "This request has already been processed."
+                return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+            else:
+                request.session["flash"] = "Admin request not found."
+                return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+        
+        # Get the request details for further processing
+        admin_request = admin_requests_collection.find_one({"_id": obj_id})
+        
+        # Update the user's role to admin
+        users_collection.update_one(
+            {"email": admin_request["user_email"]},
+            {"$set": {"role": "admin"}}
+        )
+        
+        # Log audit event
+        from app.config import log_audit_event
+        log_audit_event(
+            action="ADMIN_REQUEST_APPROVED",
+            actor=current_user["email"],
+            target=admin_request["user_email"],
+            details={"request_id": request_id}
+        )
+        
+        # Send approval email notification to the user
+        from app.email_utils import send_admin_request_approved_email
+        email_sent = send_admin_request_approved_email(admin_request["user_email"])
+        if email_sent:
+            logger.info(f"Admin request approval email sent to {admin_request['user_email']}")
+        else:
+            logger.error(f"Failed to send admin request approval email to {admin_request['user_email']}")
+        
+        request.session["flash"] = f"Admin request for {admin_request['user_email']} has been approved."
+        logger.info(f"Admin request for {admin_request['user_email']} approved by {current_user['email']}.")
+        
+    except Exception as e:
+        logger.error(f"Error approving admin request {request_id}: {e}")
+        request.session["flash"] = "An error occurred while processing the request."
+    
+    return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+
+
+@router.post("/admin-requests/{request_id}/reject", response_class=HTMLResponse)
+async def reject_admin_request(request: Request, request_id: str, current_user: dict = Depends(verify_admin)):
+    """
+    Rejects an admin access request.
+    Requires an active authenticated admin user.
+    """
+    logger.info(f"Admin request rejection attempted by {current_user['email']} for request {request_id}.")
+    
+    try:
+        # Validate ObjectId format
+        from bson import ObjectId
+        try:
+            obj_id = ObjectId(request_id)
+        except Exception:
+            request.session["flash"] = "Invalid request ID."
+            return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+        
+        # Atomically update the request status to rejected only if it's still pending
+        update_result = admin_requests_collection.update_one(
+            {"_id": obj_id, "status": "pending"},
+            {
+                "$set": {
+                    "status": "rejected",
+                    "processed_at": datetime.utcnow(),
+                    "processed_by": current_user["email"],
+                    "updated_at": datetime.utcnow()
+                }
+            }
+        )
+        
+        # Check if the update was successful (document was found and updated)
+        if update_result.matched_count == 0:
+            # Check if request exists but is already processed
+            admin_request = admin_requests_collection.find_one({"_id": obj_id})
+            if admin_request and admin_request.get("status") != "pending":
+                request.session["flash"] = "This request has already been processed."
+                return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+            else:
+                request.session["flash"] = "Admin request not found."
+                return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)
+        
+        # Get the request details for further processing
+        admin_request = admin_requests_collection.find_one({"_id": obj_id})
+        
+        # Log audit event
+        from app.config import log_audit_event
+        log_audit_event(
+            action="ADMIN_REQUEST_REJECTED",
+            actor=current_user["email"],
+            target=admin_request["user_email"],
+            details={"request_id": request_id}
+        )
+        
+        # Send rejection email notification to the user
+        from app.email_utils import send_admin_request_rejected_email
+        email_sent = send_admin_request_rejected_email(admin_request["user_email"])
+        if email_sent:
+            logger.info(f"Admin request rejection email sent to {admin_request['user_email']}")
+        else:
+            logger.error(f"Failed to send admin request rejection email to {admin_request['user_email']}")
+        
+        request.session["flash"] = f"Admin request for {admin_request['user_email']} has been rejected."
+        logger.info(f"Admin request for {admin_request['user_email']} rejected by {current_user['email']}.")
+        
+    except Exception as e:
+        logger.error(f"Error rejecting admin request {request_id}: {e}")
+        request.session["flash"] = "An error occurred while processing the request."
+    
+    return RedirectResponse(url="/admin-requests", status_code=status.HTTP_302_FOUND)

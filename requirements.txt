@@ -13,3 +13,4 @@ itsdangerous
 python-multipart
 python-jose[cryptography]
 fastapi-login
+authlib

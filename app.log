@@ -534,3 +534,25 @@
 2025-11-28 17:52:54,496 - SCMxpert - INFO - SessionMiddleware added.
 2025-11-28 17:52:54,537 - SCMxpert - INFO - All application routers included.
 2025-11-28 17:52:54,542 - SCMxpert - INFO - FastAPI application setup complete.
+2025-11-28 18:58:02,598 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-28 19:02:55,782 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-28 19:55:48,566 - SCMxpert - ERROR - JWT token not found in cookie or header.
+2025-11-28 19:55:48,567 - SCMxpert - ERROR - HTTP Exception caught: 401 - Not authenticated for path: /user_management
+2025-11-28 19:55:52,744 - SCMxpert - ERROR - JWT token not found in cookie or header.
+2025-11-28 19:55:52,745 - SCMxpert - ERROR - HTTP Exception caught: 401 - Not authenticated for path: /edit-shipment
+2025-11-28 19:56:18,932 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-28 20:13:21,128 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-28 20:45:25,709 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-28 20:49:24,210 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-29 10:01:36,727 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-29 20:38:56,003 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-11-30 20:14:19,906 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-01 12:45:28,427 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-01 12:57:21,475 - SCMxpert - WARNING - reCAPTCHA verification failed: ['timeout-or-duplicate']
+2025-12-01 12:57:21,479 - SCMxpert - WARNING - reCAPTCHA verification failed for login attempt: varmasanu23@gmail.com
+2025-12-01 16:09:25,058 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-01 16:30:41,215 - SCMxpert - WARNING - reCAPTCHA verification failed: No response token provided
+2025-12-01 16:30:41,218 - SCMxpert - WARNING - Forgot password request failed: reCAPTCHA verification failed.
+2025-12-01 16:30:57,283 - SCMxpert - WARNING - reCAPTCHA verification failed: No response token provided
+2025-12-01 16:30:57,285 - SCMxpert - WARNING - Forgot password request failed: reCAPTCHA verification failed.
+2025-12-01 16:35:52,522 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico

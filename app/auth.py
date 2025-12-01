@@ -6,13 +6,14 @@ from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext # Ensure CryptContext is imported
 from jose import JWTError, jwt
 from typing import Optional # Ensure Optional is imported
+import logging # Add logging import
 
 from app.config import SECRET_KEY, ALGORITHM, ACCESS_TOKEN_EXPIRE_MINUTES, logger, get_current_utc_time
 from app.models import TokenData
 from app.database import users_collection # Ensure users_collection is imported
 
 # Password hashing context using bcrypt scheme
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto") # <--- THIS LINE IS CRUCIAL
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto") 
 
 # OAuth2PasswordBearer for handling token authentication
 # `tokenUrl="token"` specifies the endpoint where clients can obtain a token
@@ -28,7 +29,7 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
                                              Defaults to ACCESS_TOKEN_EXPIRE_MINUTES if None.
 
     Returns:
-        str: The encoded JWT token.
+        str: The encoded JWT token.`
     """
     to_encode = data.copy()
     if expires_delta is None:
@@ -64,7 +65,9 @@ async def get_current_user(request: Request, token: str = Depends(oauth2_scheme)
     
     # Try to get the JWT token from the 'access_token' cookie first
     jwt_token = request.cookies.get("access_token")
-    logger.debug(f"JWT token from cookie: {jwt_token}")
+    # Only log this in debug mode
+    if logger.isEnabledFor(logging.DEBUG):
+        logger.debug(f"JWT token from cookie: {jwt_token}")
     
     # If not in cookie, check if it was provided via the Authorization header (from oauth2_scheme)
     if not jwt_token and token:
@@ -136,4 +139,3 @@ async def verify_admin(current_user: dict = Depends(get_current_active_user)):
             detail="Not enough permissions"
         )
     return current_user
-
