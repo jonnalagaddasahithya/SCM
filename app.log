@@ -556,3 +556,12 @@
 2025-12-01 16:30:57,283 - SCMxpert - WARNING - reCAPTCHA verification failed: No response token provided
 2025-12-01 16:30:57,285 - SCMxpert - WARNING - Forgot password request failed: reCAPTCHA verification failed.
 2025-12-01 16:35:52,522 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-01 20:36:21,014 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-02 13:00:24,522 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-02 13:01:17,498 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login/google
+2025-12-02 13:28:49,415 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:29:03,214 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:29:04,967 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:29:14,760 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:29:43,076 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-02 13:30:02,666 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login

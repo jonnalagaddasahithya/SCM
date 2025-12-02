@@ -2,7 +2,7 @@
 # Security configuration for rate limiting and IP filtering
 
 # Rate limiting configuration
-RATE_LIMIT_REQUESTS_PER_MINUTE = 5
+RATE_LIMIT_REQUESTS_PER_MINUTE = 3
 RATE_LIMIT_WINDOW_SECONDS = 60
 
 # IP filtering configuration
