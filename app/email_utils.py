@@ -95,11 +95,6 @@ def send_verification_email(recipient_email: str, verification_url: str, verific
             <p>Thank you for registering with us. To complete your registration, please verify your email address.</p>
             
             <div style="background: #e3f2fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-              <h3 style="margin-top: 0; color: #0d47a1;">Your Verification Code: 
-                <span style="font-size: 24px; font-weight: bold; letter-spacing: 3px; color: #1976d2;">
-                  {verification_code}
-                </span>
-              </h3>
               <p>Click the button below to verify your email address:</p>
               <div style="text-align: center; margin: 20px 0;">
                 <a href="{verification_url}" 
