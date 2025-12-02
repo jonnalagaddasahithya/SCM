@@ -565,3 +565,7 @@
 2025-12-02 13:29:14,760 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
 2025-12-02 13:29:43,076 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
 2025-12-02 13:30:02,666 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:45:29,925 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-02 13:45:59,820 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-02 13:47:03,125 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-02 13:48:10,526 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
