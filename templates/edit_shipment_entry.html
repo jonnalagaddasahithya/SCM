@@ -306,10 +306,45 @@
       color: #c62828;
     }
 
+    /* Status Badge Styles */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    .status-created {
+      background: #fff3e0;
+      color: #f57c00;
+    }
+    
+    .status-in-transit {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    
+    .status-delivered {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+    
+    .status-delayed {
+      background: #fff8e1;
+      color: #ffa000;
+    }
+    
+    .status-cancelled {
+      background: #ffebee;
+      color: #d32f2f;
+    }
+    
     .alert i {
       font-size: 1.2rem;
     }
-
     /* Responsive Design */
     @media (max-width: 992px) {
       .sidebar {

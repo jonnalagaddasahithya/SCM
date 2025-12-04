@@ -281,3 +281,5 @@ async def get_all_shipments(request: Request, current_user: dict = Depends(get_c
         }
     )
 
+
+

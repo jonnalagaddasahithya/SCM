@@ -260,6 +260,42 @@
       box-shadow: 0 4px 12px rgba(244, 67, 54, 0.3);
     }
 
+    /* Status Badge Styles */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    
+    .status-created {
+      background: #fff3e0;
+      color: #f57c00;
+    }
+    
+    .status-in-transit {
+      background: #e3f2fd;
+      color: #1976d2;
+    }
+    
+    .status-delivered {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+    
+    .status-delayed {
+      background: #fff8e1;
+      color: #ffa000;
+    }
+    
+    .status-cancelled {
+      background: #ffebee;
+      color: #d32f2f;
+    }
+    
     /* Alert Styles */
     .alert {
       border-radius: var(--border-radius);
@@ -269,7 +305,6 @@
       align-items: center;
       gap: 12px;
     }
-
     .alert-success {
       background: rgba(76, 175, 80, 0.15);
       border: 1px solid rgba(76, 175, 80, 0.3);
@@ -401,9 +436,8 @@
                 <td>{{ shipment.device }}</td>
                 <td>{{ shipment.po_number }}</td>
                 <td>
-                  <span>{{ shipment.status }}</span>
-                </td>
-                <td>{{ shipment.created_at }}</td>
+                  <span class="status-badge status-{{ shipment.status.lower().replace(' ', '-') }}">{{ shipment.status }}</span>
+                </td>                <td>{{ shipment.created_at }}</td>
                 <td class="actions">
                   <a href="/edit-shipment/{{ shipment.shipment_id }}" class="btn btn-primary">
                     <i class="fas fa-edit"></i> Edit

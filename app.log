@@ -580,3 +580,27 @@
 2025-12-02 14:57:03,487 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://localhost:8000/login
 2025-12-02 15:00:11,620 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
 2025-12-02 15:39:16,109 - SCMxpert - WARNING - Signup failed: Email sahithya2316@gmail.com already registered.
+2025-12-02 20:29:36,993 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/9
+2025-12-02 20:29:37,496 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/8
+2025-12-02 20:29:37,973 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/7
+2025-12-02 20:29:38,470 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/6
+2025-12-02 20:29:39,193 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/5
+2025-12-02 20:29:40,079 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/4
+2025-12-02 20:29:41,686 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/5
+2025-12-02 20:29:42,351 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/6
+2025-12-02 20:29:42,585 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/7
+2025-12-02 20:29:42,798 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/8
+2025-12-02 20:29:43,037 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/9
+2025-12-02 20:29:43,266 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/10
+2025-12-02 20:29:43,469 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/11
+2025-12-02 20:29:43,680 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/12
+2025-12-02 20:29:43,922 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2026/1
+2025-12-02 20:29:44,152 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2026/2
+2025-12-02 20:29:44,369 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2026/3
+2025-12-02 20:29:45,521 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2026/2
+2025-12-02 20:29:46,077 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2026/1
+2025-12-02 20:29:46,455 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/api/shipments/by-month/2025/12
+2025-12-03 16:27:23,283 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-04 12:25:08,819 - SCMxpert - ERROR - HTTP Exception caught: 404 - Not Found for path: /favicon.ico
+2025-12-04 12:26:31,920 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
+2025-12-04 12:26:55,346 - SCMxpert - WARNING - Rate limit exceeded for IP 127.0.0.1 on http://127.0.0.1:8000/login
